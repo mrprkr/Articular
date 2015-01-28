@@ -1,8 +1,4 @@
-<h1>Page Overview</h1>
-<br/>
-<hr>
-<br/>
-<a href="#/">back to all</a>
+<a href="#/"><i class="fa fa-arrow-circle-left"></i> All pages</a>
 
 <br/><br/><br/>
 
@@ -17,9 +13,12 @@
 <h3>{{pageLoaded.fields.name}}</h3>
 <p>{{pageLoaded.fields.pageState}}</p>
 <br/>
-<!-- <h5>Last updated: {{pageLoaded.sys.updatedAt}}</h5> -->
+
+<p><i class="fa fa-code-fork" style="padding-left:2px"></i> {{revision()}}</p>
+<p><i class="fa fa-clock-o"></i> {{timeUpdated}} on {{dateUpdated}}</p>
 <p ng-show="clientApproved"><i class="fa fa-check-circle"></i> Approved by Client</p>
 <p ng-hide="clientApproved"><i class="fa fa-times-circle"></i> Not Yet Approved</p>
+
 <br/>
 <p>{{pageLoaded.fields.description}}</p>
 

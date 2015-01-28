@@ -50,7 +50,7 @@ app.controller('mainController', function($scope, contentfulClient){
 	$scope.indexOf = function(item){
 		var x = $scope.entries.indexOf(item);
 		return x;
-	}
+	};
 });
 
 app.controller('designController', function($scope, contentfulClient, $routeParams){
@@ -59,8 +59,46 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 		$scope.entries = entries;
 		$scope.params = $routeParams.id;
 		$scope.pageLoaded = $scope.entries[$scope.params];
+
+
+		//THIS IS SOME SERIOUS DATE BUSINESS ----Look away, it's magic----
+		var date = new Date($scope.pageLoaded.sys.updatedAt);
+		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		
+		var dateSuffix = function(date){
+			if(date === 1 || date === 21 || date === 31){
+				return "st";
+			}
+			else if(date === 2 || date === 22){
+				return "nd";
+			}
+			else if(date === 3){
+				return "rd";
+			}
+			else {
+				return "th";
+			}
+		};
+
+		//Spit out the date and time
+		$scope.dateUpdated = days[date.getDay()]+", "+date.getDate()+dateSuffix(date.getDate())+" "+months[date.getMonth()]+", "+date.getFullYear();
+		$scope.timeUpdated = date.getUTCHours()+":"+date.getMinutes();
+		
+		//fix the grammar on revision(s)
+		$scope.revision = function(){
+			var r = $scope.pageLoaded.sys.revision;
+			if(r > 1){
+				r += " revisions";
+			}
+			else {
+				r += " revision";
+			}
+			return r;
+		};
+
+		//assign a variable based on if the page is approved by client
 		$scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
-		// console.log($scope.pageLoaded);
 	});
 	
 });
@@ -76,5 +114,4 @@ app.controller('styleguideController', function($scope){
 	$scope.designTest = "scope works in Design";
 
 });
-
 

@@ -9,11 +9,11 @@
 }
 
 a {
-	color: #006992;
+	color: #444;
 	text-decoration: none;
 	&:hover {
 		// color: #002772;
-		border-bottom: 2px solid #006992;
+		border-bottom: 2px solid #999;
 	}
 }
 .contentContainer {
@@ -97,7 +97,7 @@ hr {
 .textHolder {
 	display: inline-block;
 	vertical-align: top;
-	width: 300px;
+	width: 350px;
 	padding:{
 		left: 40px;
 	}
@@ -106,6 +106,9 @@ hr {
 			size: 13px;
 		}
 		line-height: 20px;
+	}
+	& i {
+		padding-right:7px;
 	}
 }
 

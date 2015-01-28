@@ -42,6 +42,31 @@ app.controller("designController", function($scope, contentfulClient, $routePara
         $scope.entries = entries;
         $scope.params = $routeParams.id;
         $scope.pageLoaded = $scope.entries[$scope.params];
+        var date = new Date($scope.pageLoaded.sys.updatedAt);
+        var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+        var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        var dateSuffix = function(date) {
+            if (date === 1 || date === 21 || date === 31) {
+                return "st";
+            } else if (date === 2 || date === 22) {
+                return "nd";
+            } else if (date === 3) {
+                return "rd";
+            } else {
+                return "th";
+            }
+        };
+        $scope.dateUpdated = days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()] + ", " + date.getFullYear();
+        $scope.timeUpdated = date.getUTCHours() + ":" + date.getMinutes();
+        $scope.revision = function() {
+            var r = $scope.pageLoaded.sys.revision;
+            if (r > 1) {
+                r += " revisions";
+            } else {
+                r += " revision";
+            }
+            return r;
+        };
         $scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
     });
 });
