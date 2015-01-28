@@ -33,7 +33,7 @@ app.controller('mainController', function($scope){
 
 app.controller('designController', function($scope){
 	//design scope
-	$scope.designTest = "scope works in Design";
+	$scope.sidebarItems = ["Global", "Home", "Events", "News"];
 
 });
 

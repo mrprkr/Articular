@@ -23,7 +23,7 @@ app.controller("mainController", function($scope) {
 });
 
 app.controller("designController", function($scope) {
-    $scope.designTest = "scope works in Design";
+    $scope.sidebarItems = [ "Global", "Home", "Events", "News" ];
 });
 
 app.controller("documentationController", function($scope) {

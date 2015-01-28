@@ -1,1000 +1,1050 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18270",
+"creatorBuild": "18493",
 "files": {
-	"\/index.html": {
+	"\/src\/css\/stylesheet.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/css\/stylesheet.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/html\/documentation.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
+		"inputAbbreviatedPath": "\/src\/html\/documentation.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/src\/js\/app.js": {
-		"fileType": 64,
+	"\/src\/html\/home.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/app.js",
-		"outputAbbreviatedPath": "\/src\/js\/min\/app-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/src\/js\/bower_componants\/bower_components\/angular\/angular-csp.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/angular-csp.css",
+		"inputAbbreviatedPath": "\/src\/html\/home.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/src\/js\/bower_componants\/bower_components\/angular\/angular.js": {
+	"\/src\/html\/styleguide.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/html\/styleguide.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/js\/bower_components\/angular-route\/angular-route.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/angular.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/min\/angular-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/angular-route.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/min\/angular-route-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/angular\/angular.min.js": {
+	"\/src\/js\/bower_components\/angular-route\/angular-route.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/angular.min.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/min\/angular.min-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/angular-route.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/min\/angular-route.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/angular\/README.md": {
+	"\/src\/js\/bower_components\/angular-route\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/README.md",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/angular\/README.html",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/README.md",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular-route\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/jquery.js": {
+	"\/src\/js\/bower_components\/angular\/angular-csp.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/angular-csp.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/js\/bower_components\/angular\/angular.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/jquery.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/min\/jquery-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/angular.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/min\/angular-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/jquery.min.js": {
+	"\/src\/js\/bower_components\/angular\/angular.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/jquery.min.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/dist\/min\/jquery.min-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/angular.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/min\/angular.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax.js": {
+	"\/src\/js\/bower_components\/angular\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/README.md",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/js\/bower_components\/jquery\/dist\/jquery.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/ajax-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/dist\/jquery.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/dist\/min\/jquery-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/jsonp.js": {
+	"\/src\/js\/bower_components\/jquery\/dist\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/jsonp.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/jsonp-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/dist\/jquery.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/dist\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/load.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/load.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/load-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/ajax-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/parseJSON.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/jsonp.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/parseJSON.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/parseJSON-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/jsonp.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/jsonp-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/parseXML.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/load.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/parseXML.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/parseXML-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/load.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/load-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/script.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/parseJSON.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/script.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/script-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/parseJSON.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/parseJSON-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/nonce.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/parseXML.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/nonce.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/min\/nonce-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/parseXML.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/parseXML-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/rquery.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/script.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/rquery.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/var\/min\/rquery-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/script.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/script-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/xhr.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/nonce.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/xhr.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/ajax\/min\/xhr-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/nonce.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/min\/nonce-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/rquery.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/attributes-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/rquery.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/var\/min\/rquery-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/attr.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/ajax\/xhr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/attr.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/min\/attr-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/xhr.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/ajax\/min\/xhr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/classes.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/classes.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/min\/classes-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/attributes-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/prop.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes\/attr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/prop.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/min\/prop-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/attr.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/min\/attr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/support.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes\/classes.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/support.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/min\/support-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/classes.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/min\/classes-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/val.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes\/prop.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/val.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/attributes\/min\/val-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/prop.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/min\/prop-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/callbacks.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes\/support.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/callbacks.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/callbacks-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/support.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/min\/support-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/attributes\/val.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/core-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/val.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/attributes\/min\/val-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/access.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/callbacks.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/access.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/min\/access-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/callbacks.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/callbacks-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/init.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/init.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/min\/init-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/core-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/parseHTML.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core\/access.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/parseHTML.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/min\/parseHTML-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/access.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/min\/access-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/ready.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core\/init.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/ready.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/min\/ready-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/init.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/min\/init-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core\/parseHTML.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/core\/var\/min\/rsingleTag-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/parseHTML.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/min\/parseHTML-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core\/ready.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/css-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/ready.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/min\/ready-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/addGetHookIf.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/addGetHookIf.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/addGetHookIf-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/core\/var\/min\/rsingleTag-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/curCSS.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/curCSS.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/curCSS-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/css-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/defaultDisplay.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/addGetHookIf.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/defaultDisplay.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/defaultDisplay-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/addGetHookIf.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/addGetHookIf-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/curCSS.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/hiddenVisibleSelectors-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/curCSS.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/curCSS-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/support.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/defaultDisplay.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/support.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/support-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/defaultDisplay.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/defaultDisplay-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/swap.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/swap.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/min\/swap-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/hiddenVisibleSelectors-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/cssExpand.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/support.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/cssExpand.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/min\/cssExpand-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/support.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/support-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/swap.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/min\/getStyles-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/swap.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/min\/swap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/isHidden.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/var\/cssExpand.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/isHidden.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/min\/isHidden-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/cssExpand.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/min\/cssExpand-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/rmargin.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/rmargin.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/min\/rmargin-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/min\/getStyles-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/var\/isHidden.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/css\/var\/min\/rnumnonpx-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/isHidden.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/min\/isHidden-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/var\/rmargin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/data-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/rmargin.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/min\/rmargin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/accepts.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/accepts.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/min\/accepts-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/css\/var\/min\/rnumnonpx-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/Data.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/data.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/Data.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/min\/Data-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/data_priv.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/data\/accepts.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/data_priv.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/min\/data_priv-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/accepts.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/min\/accepts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/data_user.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/data\/Data.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/data_user.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/data\/var\/min\/data_user-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/Data.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/min\/Data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/deferred.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/data\/var\/data_priv.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/deferred.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/deferred-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/var\/data_priv.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/var\/min\/data_priv-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/deprecated.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/data\/var\/data_user.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/deprecated.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/deprecated-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/var\/data_user.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/data\/var\/min\/data_user-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/dimensions.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/deferred.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/dimensions.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/dimensions-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/deferred.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/deferred-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/deprecated.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/effects-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/deprecated.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/deprecated-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/animatedSelector.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/dimensions.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/min\/animatedSelector-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/dimensions.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/dimensions-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/Tween.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/effects.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/Tween.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/effects\/min\/Tween-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/effects.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/effects-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/effects\/animatedSelector.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/event-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/effects\/min\/animatedSelector-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/ajax.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/effects\/Tween.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/ajax.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/min\/ajax-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/effects\/Tween.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/effects\/min\/Tween-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/alias.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/event.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/alias.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/min\/alias-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/event-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/support.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/event\/ajax.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/support.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/event\/min\/support-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/ajax.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/min\/ajax-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/amd.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/event\/alias.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/amd.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/min\/amd-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/alias.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/min\/alias-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/global.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/event\/support.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/global.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/exports\/min\/global-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/support.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/event\/min\/support-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/intro.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/exports\/amd.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/intro.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/intro-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/exports\/amd.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/exports\/min\/amd-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/jquery.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/exports\/global.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/jquery.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/jquery-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/exports\/global.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/exports\/min\/global-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/intro.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/manipulation-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/intro.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/intro-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/jquery.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/jquery\/src\/manipulation.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/manipulation-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/min\/_evalUrl-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/min\/_evalUrl-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/support.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/manipulation\/support.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/support.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/min\/support-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/support.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/min\/support-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/manipulation\/var\/min\/rcheckableType-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/manipulation\/var\/min\/rcheckableType-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/offset.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/offset.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/offset.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/offset-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/offset.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/offset-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/outro.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/outro.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/outro.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/outro-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/outro.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/outro-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/queue.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/queue.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/queue.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/queue-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/queue.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/queue-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/queue\/delay.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/queue\/delay.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/queue\/delay.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/queue\/min\/delay-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/queue\/delay.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/queue\/min\/delay-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector-native.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/selector-native.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector-native.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/selector-native-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/selector-native.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/selector-native-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector-sizzle.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/selector-sizzle.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector-sizzle.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/selector-sizzle-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/selector-sizzle.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/selector-sizzle-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/selector.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/selector.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/selector-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/selector.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/selector-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/serialize.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/serialize.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/serialize.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/serialize-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/serialize.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/serialize-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/min\/sizzle-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/min\/sizzle-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.min.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.min.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/sizzle\/dist\/min\/sizzle.min-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/sizzle.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/sizzle\/dist\/min\/sizzle.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/traversing.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/traversing-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/traversing.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/traversing-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/findFilter.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/traversing\/findFilter.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/findFilter.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/min\/findFilter-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/traversing\/findFilter.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/traversing\/min\/findFilter-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/traversing\/var\/min\/rneedsContext-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/traversing\/var\/min\/rneedsContext-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/arr.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/arr.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/arr.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/arr-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/arr.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/arr-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/class2type.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/class2type.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/class2type.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/class2type-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/class2type.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/class2type-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/concat.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/concat.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/concat.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/concat-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/concat.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/concat-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/hasOwn.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/hasOwn.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/hasOwn.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/hasOwn-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/hasOwn.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/hasOwn-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/indexOf.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/indexOf.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/indexOf.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/indexOf-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/indexOf.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/indexOf-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/pnum.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/pnum.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/pnum.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/pnum-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/pnum.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/pnum-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/push.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/push.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/push.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/push-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/push.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/push-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/rnotwhite.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/rnotwhite.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/rnotwhite.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/rnotwhite-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/rnotwhite.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/rnotwhite-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/slice.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/slice.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/slice.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/slice-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/slice.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/slice-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/strundefined.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/strundefined.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/strundefined.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/strundefined-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/strundefined.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/strundefined-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/support.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/support.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/support.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/support-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/support.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/support-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/toString.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/var\/toString.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/toString.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/var\/min\/toString-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/toString.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/var\/min\/toString-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/js\/bower_componants\/bower_components\/jquery\/src\/wrap.js": {
+	"\/src\/js\/bower_components\/jquery\/src\/wrap.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/wrap.js",
-		"outputAbbreviatedPath": "\/src\/js\/bower_componants\/bower_components\/jquery\/src\/min\/wrap-min.js",
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/wrap.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/jquery\/src\/min\/wrap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1065,6 +1115,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -1158,6 +1212,10 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -1214,6 +1272,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -1236,6 +1298,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -1290,6 +1356,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -1333,6 +1403,10 @@
 		"maxstatements": {
 			"active": 0,
 			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"mootools": {
 			"active": 0,
@@ -1399,6 +1473,10 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1626,6 +1704,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -1650,8 +1729,9 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -1688,6 +1768,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1731,6 +1815,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1743,8 +1831,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
