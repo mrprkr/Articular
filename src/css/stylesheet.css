@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.contentContainer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+nav {
+  margin-bottom: 40px;
+  padding: 20px;
+  display: block;
+  background-color: #f8f8f8; }
