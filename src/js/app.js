@@ -83,7 +83,7 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 
 		//Spit out the date and time
 		$scope.dateUpdated = days[date.getDay()]+", "+date.getDate()+dateSuffix(date.getDate())+" "+months[date.getMonth()]+", "+date.getFullYear();
-		$scope.timeUpdated = date.getUTCHours()+":"+date.getMinutes();
+		$scope.timeUpdated = date.getHours()+":"+date.getMinutes();
 		
 		//fix the grammar on revision(s)
 		$scope.revision = function(){

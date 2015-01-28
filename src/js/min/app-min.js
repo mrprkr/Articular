@@ -57,7 +57,7 @@ app.controller("designController", function($scope, contentfulClient, $routePara
             }
         };
         $scope.dateUpdated = days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()] + ", " + date.getFullYear();
-        $scope.timeUpdated = date.getUTCHours() + ":" + date.getMinutes();
+        $scope.timeUpdated = date.getHours() + ":" + date.getMinutes();
         $scope.revision = function() {
             var r = $scope.pageLoaded.sys.revision;
             if (r > 1) {

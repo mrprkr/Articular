@@ -16,8 +16,8 @@
 <br/>
 <div ng-repeat="item in entries | filter: listFilter | orderBy: 'name'">
 <div class="listItem">
-	<a ng-href="#design/{{indexOf(item)}}">{{item.fields.name}}<br/></a>
-	<span class="pageState" ng-click="setAsPageSelected(this.item)">{{item.fields.pageState}}</span>
+	<a ng-href="#design/{{indexOf(item)}}">{{item.fields.name}}<br/>
+	<span class="pageState" ng-click="setAsPageSelected(this.item)">{{item.fields.pageState}}</span></a>
 
 </div>
 

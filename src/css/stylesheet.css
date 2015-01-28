@@ -7,7 +7,7 @@ a {
   color: #444;
   text-decoration: none; }
   a:hover {
-    border-bottom: 2px solid #999; }
+    border-bottom: 2px solid #444; }
 
 .contentContainer {
   width: 900px;
@@ -54,7 +54,11 @@ hr {
   width: 500px;
   cursor: zoom-in; }
   .imageHolder img {
-    width: 500px; }
+    width: 500px;
+    min-height: 300px;
+    background-color: #EFEFEF;
+    box-shadow: 0px 0px 4px #ccc;
+    margin-bottom: 40px; }
   .imageHolder a {
     cursor: zoom-in; }
     .imageHolder a:hover {
@@ -84,4 +88,4 @@ hr {
   line-height: 20px; }
   .listItem .pageState {
     font-size: 13px;
-    color: #444; }
+    color: #666; }
