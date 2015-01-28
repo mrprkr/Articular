@@ -18,7 +18,9 @@
 <div class="listItem">
 	<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
 	<span class="pageState">
-	<br/><i class="fa fa-map-marker"></i> {{item.fields.stakeholder}}</a></span>
+	<br/>
+	<p ng-show="{{item.fields.clientApproved}}"><i class="fa fa-check-circle"></i> Approved by Client</p>
+	<p ng-hide="{{item.fields.clientApproved}}"><i class="fa fa-times-circle"></i> Not Yet Approved</p></a></span>
 
 </div>
 

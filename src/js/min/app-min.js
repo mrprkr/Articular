@@ -46,12 +46,12 @@ app.controller("mainController", function($scope, contentfulClient) {
 app.controller("designController", function($scope, contentfulClient, $routeParams, $sce) {
     contentfulClient.entries().then(function(entries) {
         $scope.entries = entries;
-        for (x in $scope.entries) {
+        for (var x in $scope.entries) {
             if (entries[x].sys.id === $routeParams.id) {
                 $scope.pageLoaded = $scope.entries[x];
             }
         }
-        var date = new Date($scope.pageLoaded.sys.updatedAt);
+        var date = new Date($scope.pageLoaded.fields.image.sys.updatedAt);
         var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
         var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
         var dateSuffix = function(date) {
