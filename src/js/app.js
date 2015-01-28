@@ -37,7 +37,7 @@ app.controller('mainController', function($scope, contentfulClient){
 	//load list in from Contentful
 	contentfulClient.entries().then(function(entries){
 		  $scope.entries = entries;
-		  // console.log($scope.entries);
+		  // console.log($scope.entries[0].sys.id);
 	});
 
 	//filtering for the list
@@ -62,12 +62,20 @@ app.controller('mainController', function($scope, contentfulClient){
 	}
 });
 
-app.controller('designController', function($scope, contentfulClient, $routeParams){
-	$scope.params = $routeParams;
+app.controller('designController', function($scope, contentfulClient, $routeParams, $sce){
+	// $scope.params = $routeParams;
+
 	contentfulClient.entries().then(function(entries){
 		$scope.entries = entries;
-		$scope.params = $routeParams.id;
-		$scope.pageLoaded = $scope.entries[$scope.params];
+
+		for(x in $scope.entries){
+			if(entries[x].sys.id === $routeParams.id){
+				$scope.pageLoaded = $scope.entries[x];
+			}
+		}
+
+		// $scope.params = $routeParams.id;
+		// $scope.pageLoaded = $scope.entries[$scope.params];
 
 
 		//THIS IS SOME SERIOUS DATE BUSINESS ----Look away, it's magic----
@@ -109,6 +117,10 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 		//assign a variable based on if the page is approved by client
 		$scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
 	});
+
+	$scope.toTrusted = function(data){
+		return $sce.trustAsHtml(data);
+	};
 	
 });
 

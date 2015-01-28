@@ -16,7 +16,7 @@
 <br/>
 <div ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
 <div class="listItem">
-	<a ng-href="#design/{{indexOf(item)}}">{{item.fields.name}} - {{item.fields.pageState}}
+	<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
 	<span class="pageState">
 	<br/><i class="fa fa-map-marker"></i> {{item.fields.stakeholder}}</a></span>
 
