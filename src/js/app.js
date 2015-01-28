@@ -1,31 +1,3 @@
-// var screenNameList = [
-// 	'Example Item',
-// 	'Events Detail Entry Closed',
-// 	'Events Ratings',
-// 	'Ratings Overview',
-// 	'Ratigns Detail',
-// 	'Shop Catagories',
-// 	'Shop Item Detail',
-// 	'Shop Item Listing',
-// 	'Global SA Footer',
-// 	'Global State Footer',
-// 	'Global SA Navigation',
-// 	'Global State Navigation',
-// 	'News Listing',
-// 	'News Article',
-// 	'Education Coaching',
-// 	'Education Judging',
-// 	'Generic Content Page',
-// 	'Surfing Australia Homepage',
-// 	'New South Wales Homepage',
-// 	'Queensland Homepage',
-// 	'South Australia Homepage',
-// 	'Victoria Homepage',
-// 	'Events Detail Entry Open'
-// ];
-
-var pageData = pageData;
-
 //Initilise angular app
 var angular = angular;
 var app = angular.module('app', ['ngRoute', 'ng-contentful']);
@@ -47,7 +19,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 			controller: 'documentationController'
 		})
 
-		.when('/design', {
+		.when('/design/:id', {
 			templateUrl: "src/html/design.html",
 			controller: 'designController'
 		})
@@ -61,25 +33,36 @@ app.config(function($routeProvider, contentfulClientProvider){
 });
 
 //the main controller
-app.controller('mainController', function($scope){
-	$scope.test = "angular actually works!";
-	$scope.list = pageData;
-	
+app.controller('mainController', function($scope, contentfulClient){
+	//load list in from Contentful
+	contentfulClient.entries().then(function(entries){
+		  $scope.entries = entries;
+		  // console.log($scope.entries);
+	});
+
+	//filtering for the list
 	$scope.listFilter = "";
 	$scope.filterList = function(filter){
 		$scope.listFilter = filter;
 	};
-	// $scope.addClass = function(class){
-	// 	this.
-	// }
 
+	//return the index of an object
+	$scope.indexOf = function(item){
+		var x = $scope.entries.indexOf(item);
+		return x;
+	}
 });
 
-app.controller('designController', function($scope){
-	//design scope
-	$scope.test = "test";
-	$scope.list = pageData;
-
+app.controller('designController', function($scope, contentfulClient, $routeParams){
+	$scope.params = $routeParams;
+	contentfulClient.entries().then(function(entries){
+		$scope.entries = entries;
+		$scope.params = $routeParams.id;
+		$scope.pageLoaded = $scope.entries[$scope.params];
+		$scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
+		// console.log($scope.pageLoaded);
+	});
+	
 });
 
 app.controller('documentationController', function($scope){

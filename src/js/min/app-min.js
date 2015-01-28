@@ -1,5 +1,3 @@
-var pageData = pageData;
-
 var angular = angular;
 
 var app = angular.module("app", [ "ngRoute", "ng-contentful" ]);
@@ -14,7 +12,7 @@ app.config(function($routeProvider, contentfulClientProvider) {
     }).when("/documentation", {
         templateUrl: "src/html/documentation.html",
         controller: "documentationController"
-    }).when("/design", {
+    }).when("/design/:id", {
         templateUrl: "src/html/design.html",
         controller: "designController"
     }).otherwise({
@@ -24,18 +22,28 @@ app.config(function($routeProvider, contentfulClientProvider) {
     contentfulClientProvider.setAccessToken("c35b82ea8c5dad62950fa76f7a3c05459a8c4166b4d1ecdf7e52048757d6a50c");
 });
 
-app.controller("mainController", function($scope) {
-    $scope.test = "angular actually works!";
-    $scope.list = pageData;
+app.controller("mainController", function($scope, contentfulClient) {
+    contentfulClient.entries().then(function(entries) {
+        $scope.entries = entries;
+    });
     $scope.listFilter = "";
     $scope.filterList = function(filter) {
         $scope.listFilter = filter;
     };
+    $scope.indexOf = function(item) {
+        var x = $scope.entries.indexOf(item);
+        return x;
+    };
 });
 
-app.controller("designController", function($scope) {
-    $scope.test = "test";
-    $scope.list = pageData;
+app.controller("designController", function($scope, contentfulClient, $routeParams) {
+    $scope.params = $routeParams;
+    contentfulClient.entries().then(function(entries) {
+        $scope.entries = entries;
+        $scope.params = $routeParams.id;
+        $scope.pageLoaded = $scope.entries[$scope.params];
+        $scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
+    });
 });
 
 app.controller("documentationController", function($scope) {

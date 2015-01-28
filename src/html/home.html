@@ -17,10 +17,10 @@
 <!-- <br/>
 <p id="results"> {{list.length}} Results:</p> -->
 <br/>
-<div ng-repeat="item in list | filter: listFilter | orderBy: 'name'">
+<div ng-repeat="item in entries | filter: listFilter | orderBy: 'name'">
 <div class="listItem">
-	<a href="#design/">{{item.name}}<br/></a>
-	<span class="pageState">{{item.pageState}}</span>
+	<a ng-href="#design/{{indexOf(item)}}">{{item.fields.name}}<br/></a>
+	<span class="pageState" ng-click="setAsPageSelected(this.item)">{{item.fields.pageState}}</span>
 
 </div>
 

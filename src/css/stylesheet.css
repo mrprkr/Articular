@@ -51,9 +51,14 @@ hr {
 
 .imageHolder {
   display: inline-block;
-  width: 500px; }
+  width: 500px;
+  cursor: zoom-in; }
   .imageHolder img {
     width: 500px; }
+  .imageHolder a {
+    cursor: zoom-in; }
+    .imageHolder a:hover {
+      border: none; }
 
 .textHolder {
   display: inline-block;

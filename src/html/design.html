@@ -3,16 +3,24 @@
 <hr>
 <br/>
 <a href="#/">back to all</a>
+
 <br/><br/><br/>
+
+
+
 <div class="imageHolder">
-	<a href="src/img/screen_example.jpg" target="_blank"> <img ng-src="{{list[0].imageURL}}"></a>
+	<a ng-href="{{pageLoaded.fields.image.fields.file.url}}" target="_blank">
+	<img ng-src="{{pageLoaded.fields.image.fields.file.url}}"></a>
 </div>
 
 <div class="textHolder">
-<h3>{{list[0].name}}</h3>
-<h5>Last updated: {{list[0].lastUpdated}}</h5>
-<p>Client approved: {{list[0].clientApproved}}</p>
+<h3>{{pageLoaded.fields.name}}</h3>
+<p>{{pageLoaded.fields.pageState}}</p>
 <br/>
-<p>{{list[0].desc}}</p>
+<!-- <h5>Last updated: {{pageLoaded.sys.updatedAt}}</h5> -->
+<p ng-show="clientApproved"><i class="fa fa-check-circle"></i> Approved by Client</p>
+<p ng-hide="clientApproved"><i class="fa fa-times-circle"></i> Not Yet Approved</p>
+<br/>
+<p>{{pageLoaded.fields.description}}</p>
 
 </div>
