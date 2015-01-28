@@ -88,11 +88,12 @@ hr {
 		background-color: #EFEFEF;
 		box-shadow: 0px 0px 4px #ccc;
 		margin-bottom: 40px;
+		cursor: zoom-in !important;
 	}
 	& a {
-		cursor: zoom-in;
 		&:hover{
 			border: none;
+			cursor: zoom-in !important;
 		}
 	}
 

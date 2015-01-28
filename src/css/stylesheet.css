@@ -58,11 +58,11 @@ hr {
     min-height: 300px;
     background-color: #EFEFEF;
     box-shadow: 0px 0px 4px #ccc;
-    margin-bottom: 40px; }
-  .imageHolder a {
-    cursor: zoom-in; }
-    .imageHolder a:hover {
-      border: none; }
+    margin-bottom: 40px;
+    cursor: zoom-in !important; }
+  .imageHolder a:hover {
+    border: none;
+    cursor: zoom-in !important; }
 
 .textHolder {
   display: inline-block;

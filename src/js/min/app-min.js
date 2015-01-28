@@ -34,6 +34,13 @@ app.controller("mainController", function($scope, contentfulClient) {
         var x = $scope.entries.indexOf(item);
         return x;
     };
+    $scope.whatColor = function(state) {
+        if (state === "Surfing Australia") {
+            return "color: #444";
+        } else if (state === "South Australia") {
+            return "color: red";
+        }
+    };
 });
 
 app.controller("designController", function($scope, contentfulClient, $routeParams) {
