@@ -10,7 +10,7 @@ a {
     border-bottom: 2px solid #006992; }
 
 .contentContainer {
-  width: 1200px;
+  width: 900px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -18,14 +18,22 @@ a {
   padding-right: 20px; }
 
 nav {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
-  background-color: #f8f8f8;
   text-align: right; }
   nav a {
-    margin-left: 10px;
-    margin-right: 10px; }
+    margin-left: 20px; }
+
+h1 {
+  text-transform: uppercase; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
 .designNav {
   padding-top: 5px;
@@ -43,14 +51,14 @@ nav {
 
 .imageHolder {
   display: inline-block;
-  width: 600px; }
+  width: 500px; }
   .imageHolder img {
-    width: 600px; }
+    width: 500px; }
 
 .textHolder {
   display: inline-block;
   vertical-align: top;
-  width: 500px;
+  width: 300px;
   padding-left: 40px; }
   .textHolder p {
     font-size: 13px;
@@ -59,8 +67,14 @@ nav {
 .designLink {
   cursor: pointer; }
 
+#results {
+  font-size: 11px;
+  text-transform: uppercase; }
+
 .listItem {
-  margin-left: 20px;
-  cursor: pointer;
   font-size: 15px;
-  line-height: 25px; }
+  margin-bottom: 15px;
+  line-height: 20px; }
+  .listItem .pageState {
+    font-size: 13px;
+    color: #444; }

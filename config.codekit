@@ -2,11 +2,29 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18493",
 "files": {
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/css\/stylesheet.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/css\/stylesheet.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/html\/design.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/html\/design.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -37,6 +55,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/src\/img\/screen_example.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 946885,
+		"inputAbbreviatedPath": "\/src\/img\/screen_example.jpg",
+		"outputAbbreviatedPath": "\/src\/img\/screen_example.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/src\/js\/app.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/app.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/app-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/src\/js\/bower_components\/angular-route\/angular-route.js": {
 		"fileType": 64,
@@ -114,6 +154,150 @@
 		"outputAbbreviatedPath": "\/src\/js\/bower_components\/angular\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/src\/js\/bower_components\/contentful\/dist\/contentful.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/dist\/contentful.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/dist\/min\/contentful-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/dist\/contentful.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/dist\/contentful.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/dist\/min\/contentful.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/index.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/index.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/questor.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/questor.min.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/min\/questor.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/README.md",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/buster.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/buster.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/min\/buster-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/helper.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/helper.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/min\/helper-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/integration\/asset-test.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/asset-test.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/min\/asset-test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/integration\/callback-test.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/callback-test.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/min\/callback-test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/integration\/content-type-test.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/content-type-test.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/min\/content-type-test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/integration\/entry-test.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/entry-test.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/min\/entry-test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/integration\/space-test.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/space-test.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/integration\/min\/space-test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/bower_components\/contentful\/test\/util.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/util.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/contentful\/test\/min\/util-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/src\/js\/bower_components\/jquery\/dist\/jquery.js": {
 		"fileType": 64,
@@ -1050,6 +1234,50 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/src\/js\/bower_components\/ng-contentful\/ng-contentful.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/bower_components\/ng-contentful\/ng-contentful.js",
+		"outputAbbreviatedPath": "\/src\/js\/bower_components\/ng-contentful\/min\/ng-contentful-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/data.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/data.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/data-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/min\/app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/min\/app-min.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/min\/app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/min\/data-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/min\/data-min.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/min\/data-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/src\/scss\/stylesheet.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1525,7 +1753,7 @@
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"withstmt": {

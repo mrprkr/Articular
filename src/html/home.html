@@ -1,21 +1,27 @@
-<h1>Visual Design</h1>
+<h1>Design Repository</h1>
 <br/>
 <hr>
 <br/>
 <div class="designNav">
-<a ng-click="filterList(''); addClass('.selected')" class="designLink">All</a>
+<a ng-click="filterList('')" class="designLink selected">All</a>
 <a ng-click="filterList('Global')" class="designLink">Global</a>
 <a ng-click="filterList('Homepage')" class="designLink">Homepage</a>
 <a ng-click="filterList('News')" class="designLink">News</a>
-<a ng-click="filterList('Events')" class="designLink">Events</a>
+<a ng-click="filterList('Event')" class="designLink">Events</a>
 <a ng-click="filterList('Ratings')" class="designLink">Ratings</a>
 <a ng-click="filterList('Shop')" class="designLink">Shop</a>
 <a ng-click="filterList('Education')" class="designLink">Education</a>
 <a ng-click="filterList('Generic')" class="designLink">Generic Content</a>
 </div>
 <br/>
+<!-- <br/>
+<p id="results"> {{list.length}} Results:</p> -->
 <br/>
-
 <div ng-repeat="item in list | filter: listFilter | orderBy: 'name'">
-<a href="#design" class="listItem">{{item.name}}</a>
+<div class="listItem">
+	<a href="#design/">{{item.name}}<br/></a>
+	<span class="pageState">{{item.pageState}}</span>
+
+</div>
+
 </div>
