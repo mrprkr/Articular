@@ -1,3 +1,5 @@
+var pageData = pageData;
+
 var angular = angular;
 
 var app = angular.module("app", [ "ngRoute", "ng-contentful" ]);
@@ -15,23 +17,25 @@ app.config(function($routeProvider, contentfulClientProvider) {
     }).when("/design", {
         templateUrl: "src/html/design.html",
         controller: "designController"
+    }).otherwise({
+        redirectTo: "/"
     });
     contentfulClientProvider.setSpaceId("qj4662rfubip");
     contentfulClientProvider.setAccessToken("c35b82ea8c5dad62950fa76f7a3c05459a8c4166b4d1ecdf7e52048757d6a50c");
 });
 
-app.controller("mainController", function($scope, contentfulClient) {
-    contentfulClient.space().then(function(space) {
-        $scope.space = space;
-    });
-    contentfulClient.entries().then(function(entries) {
-        $scope.entries = entries;
-    });
+app.controller("mainController", function($scope) {
     $scope.test = "angular actually works!";
+    $scope.list = pageData;
+    $scope.listFilter = "";
+    $scope.filterList = function(filter) {
+        $scope.listFilter = filter;
+    };
 });
 
 app.controller("designController", function($scope) {
     $scope.test = "test";
+    $scope.list = pageData;
 });
 
 app.controller("documentationController", function($scope) {

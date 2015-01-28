@@ -1,3 +1,31 @@
+// var screenNameList = [
+// 	'Example Item',
+// 	'Events Detail Entry Closed',
+// 	'Events Ratings',
+// 	'Ratings Overview',
+// 	'Ratigns Detail',
+// 	'Shop Catagories',
+// 	'Shop Item Detail',
+// 	'Shop Item Listing',
+// 	'Global SA Footer',
+// 	'Global State Footer',
+// 	'Global SA Navigation',
+// 	'Global State Navigation',
+// 	'News Listing',
+// 	'News Article',
+// 	'Education Coaching',
+// 	'Education Judging',
+// 	'Generic Content Page',
+// 	'Surfing Australia Homepage',
+// 	'New South Wales Homepage',
+// 	'Queensland Homepage',
+// 	'South Australia Homepage',
+// 	'Victoria Homepage',
+// 	'Events Detail Entry Open'
+// ];
+
+var pageData = pageData;
+
 //Initilise angular app
 var angular = angular;
 var app = angular.module('app', ['ngRoute', 'ng-contentful']);
@@ -22,6 +50,10 @@ app.config(function($routeProvider, contentfulClientProvider){
 		.when('/design', {
 			templateUrl: "src/html/design.html",
 			controller: 'designController'
+		})
+
+		.otherwise({
+			redirectTo: '/'
 		});
 
 	 contentfulClientProvider.setSpaceId('qj4662rfubip');
@@ -29,22 +61,24 @@ app.config(function($routeProvider, contentfulClientProvider){
 });
 
 //the main controller
-app.controller('mainController', function($scope, contentfulClient){
-	contentfulClient.space().then(function (space) {
-    	$scope.space = space;
-  	});
-  	contentfulClient.entries().then(function(entries){
-		$scope.entries = entries;
-		// console.log($scope.entries);
-	});
-
+app.controller('mainController', function($scope){
 	$scope.test = "angular actually works!";
+	$scope.list = pageData;
+	
+	$scope.listFilter = "";
+	$scope.filterList = function(filter){
+		$scope.listFilter = filter;
+	};
+	// $scope.addClass = function(class){
+	// 	this.
+	// }
 
 });
 
 app.controller('designController', function($scope){
 	//design scope
 	$scope.test = "test";
+	$scope.list = pageData;
 
 });
 
@@ -59,4 +93,5 @@ app.controller('styleguideController', function($scope){
 	$scope.designTest = "scope works in Design";
 
 });
+
 

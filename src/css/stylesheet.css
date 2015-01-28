@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: Arial, sans-serif; }
 
 a {
   color: #006992;
@@ -55,3 +55,12 @@ nav {
   .textHolder p {
     font-size: 13px;
     line-height: 20px; }
+
+.designLink {
+  cursor: pointer; }
+
+.listItem {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 25px; }
