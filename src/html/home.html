@@ -18,27 +18,31 @@
 <br/>
 <br/>
 
+<div class="resultsContainer"></div>
+<div id="tester">TESTER</div><br/>
+
 
 <!-- TABLE HEADER -->
 <table style="font-size: 13px; font-weight: bold">
 <th><tr><td width="40px"> <i class="fa fa-user"></i></td><td width="200px">Page</td><td width="220px">Page State</td><td width="80px">Rev</td><td width="200px">Last Updated</td><td>Open</td></tr></th>
 <tr height="10px"></tr>
 </table>
-<!-- TABLE REPEATER -->
-<table style="font-size: 13px" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
-	<tr height="30px">
-	<td width="40px"> 
-		<p ng-show="{{item.fields.clientApproved}}" style="color:green"><i class="fa fa-check-circle"></i></p>
-		<p ng-hide="{{item.fields.clientApproved}}" style="color:red"><i class="fa fa-times-circle"></i></p>
-		</td>
-	<td width="200px">{{item.fields.name}}</td>
-	<td width="220px">{{item.fields.pageState}}</td>
-	<td width="80px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
-	<td width="200px">{{theDate(item.sys.updatedAt)}}</td>
-	<td style="text-align:center" width="32px"><a href="#design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
-	</tr>
-</table>
 
+
+	<!-- TABLE REPEATER -->
+	<table style="font-size: 13px" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
+		<tr height="30px">
+		<td width="40px"> 
+			<p ng-show="{{item.fields.clientApproved}}" style="color:green"><i class="fa fa-check-circle"></i></p>
+			<p ng-hide="{{item.fields.clientApproved}}" style="color:red"><i class="fa fa-times-circle"></i></p>
+			</td>
+		<td width="200px">{{item.fields.name}}</td>
+		<td width="220px">{{item.fields.pageState}}</td>
+		<td width="80px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
+		<td width="200px">{{theDate(item.sys.updatedAt)}}</td>
+		<td style="text-align:center" width="32px"><a href="#design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
+		</tr>
+	</table>
 
 <br/><br/><br/>
 

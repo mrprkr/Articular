@@ -88,3 +88,6 @@ hr {
   .listItem .pageState {
     font-size: 13px;
     color: #666; }
+
+#tester {
+  display: none; }

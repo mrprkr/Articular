@@ -150,20 +150,23 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 
 		//assign a variable based on if the page is approved by client
 		$scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
+
+		$scope.hasComments = function(){
+			if($scope.pageLoaded.fields.comments !== undefined){
+				return true;
+			}
+			else{
+				return false;
+			}
+		};
+	
 	});
 
 	$scope.toTrusted = function(data){
 		return $sce.trustAsHtml(data);
 	};
 
-	$scope.hasComments = function(){
-		if($scope.pageLoaded.fields.comments !== undefined){
-			return true;
-		}
-		else{
-			return false;
-		}
-	};
+
 });
 
 app.controller('documentationController', function($scope){

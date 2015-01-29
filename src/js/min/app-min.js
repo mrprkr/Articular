@@ -98,16 +98,16 @@ app.controller("designController", function($scope, contentfulClient, $routePara
             return r;
         };
         $scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
+        $scope.hasComments = function() {
+            if ($scope.pageLoaded.fields.comments !== undefined) {
+                return true;
+            } else {
+                return false;
+            }
+        };
     });
     $scope.toTrusted = function(data) {
         return $sce.trustAsHtml(data);
-    };
-    $scope.hasComments = function() {
-        if ($scope.pageLoaded.fields.comments !== undefined) {
-            return true;
-        } else {
-            return false;
-        }
     };
 });
 
