@@ -45,6 +45,23 @@ app.controller("mainController", function($scope, contentfulClient) {
     $scope.filterApproval = function(value) {
         $scope.filterToNotApproved = value;
     };
+    $scope.theDate = function(value) {
+        var date = new Date(value);
+        var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+        var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        var dateSuffix = function(date) {
+            if (date === 1 || date === 21 || date === 31) {
+                return "st";
+            } else if (date === 2 || date === 22) {
+                return "nd";
+            } else if (date === 3) {
+                return "rd";
+            } else {
+                return "th";
+            }
+        };
+        return days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
+    };
 });
 
 app.controller("designController", function($scope, contentfulClient, $routeParams, $sce) {
@@ -84,6 +101,13 @@ app.controller("designController", function($scope, contentfulClient, $routePara
     });
     $scope.toTrusted = function(data) {
         return $sce.trustAsHtml(data);
+    };
+    $scope.hasComments = function() {
+        if ($scope.pageLoaded.fields.comments !== undefined) {
+            return true;
+        } else {
+            return false;
+        }
     };
 });
 

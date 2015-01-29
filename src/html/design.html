@@ -10,8 +10,8 @@
 <div class="textHolder">
 <h3>{{pageLoaded.fields.name}}</h3>
 <p>{{pageLoaded.fields.pageState}}</p>
-<br/>
-<p><i class="fa fa-map-marker"></i> {{pageLoaded.fields.stakeholder}}</p>
+<!-- <br/>
+<p><i class="fa fa-map-marker"></i> {{pageLoaded.fields.stakeholder}}</p> -->
 <br/>
 <p><i class="fa fa-code-fork" style="padding-left:2px"></i> {{revision()}}</p>
 <p><i class="fa fa-clock-o"></i> {{timeUpdated}} on {{dateUpdated}}</p>
@@ -19,7 +19,9 @@
 <p ng-hide="clientApproved"><i class="fa fa-times-circle"></i> Not Yet Approved</p>
 
 <br/>
-
+<p><i class="fa fa-file-text-o"></i> Description:</p>
 <p ng-bind-html="toTrusted(pageLoaded.fields.description)"></p>
+<br/>
 
+<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments: <br/>{{pageLoaded.fields.comments}}</p>
 </div>

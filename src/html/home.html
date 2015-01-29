@@ -1,10 +1,10 @@
-<div class="designNav">
+<!-- <div class="designNav">
 <i class="fa fa-filter"></i>
 <a ng-click="filterApproval(false)" class="designLink">Show All</a>
 <a ng-click="filterApproval(true)" class="designLink">Show Awaiting Approval</a>
-</div>
+</div> -->
 <div class="designNav">
-<i class="fa fa-file-o"></i>
+<!-- <i class="fa fa-file-o"></i> --><i class="fa fa-filter"></i>
 <a ng-click="filterList('')" class="designLink">All Pages</a>
 <a ng-click="filterList('Global')" class="designLink">Global</a>
 <a ng-click="filterList('Homepage')" class="designLink">Homepage</a>
@@ -18,8 +18,31 @@
 <br/>
 <br/>
 
-<!-- ALL -->
-<div ng-hide="filterToNotApproved" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
+
+<!-- TABLE HEADER -->
+<table style="font-size: 13px; font-weight: bold">
+<th><tr><td width="40px"> <i class="fa fa-user"></i></td><td width="200px">Page</td><td width="220px">Page State</td><td width="80px">Rev</td><td width="200px">Last Updated</td><td>Open</td></tr></th>
+<tr height="10px"></tr>
+</table>
+<!-- TABLE REPEATER -->
+<table style="font-size: 13px" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
+	<tr height="30px">
+	<td width="40px"> 
+		<p ng-show="{{item.fields.clientApproved}}" style="color:green"><i class="fa fa-check-circle"></i></p>
+		<p ng-hide="{{item.fields.clientApproved}}" style="color:red"><i class="fa fa-times-circle"></i></p>
+		</td>
+	<td width="200px">{{item.fields.name}}</td>
+	<td width="220px">{{item.fields.pageState}}</td>
+	<td width="80px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
+	<td width="200px">{{theDate(item.sys.updatedAt)}}</td>
+	<td style="text-align:center" width="32px"><a href="#design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
+	</tr>
+</table>
+
+
+<br/><br/><br/>
+
+<!-- <div ng-hide="filterToNotApproved" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
 	<div class="listItem">
 		<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
 		<span class="pageState">
@@ -29,7 +52,6 @@
 	</div>
 </div>
 
-<!-- NOT APPROVED -->
 <div ng-show="filterToNotApproved" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
 	<div class="listItem" ng-hide="{{item.fields.clientApproved}}">
 		<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
@@ -38,7 +60,7 @@
 		<p ng-show="{{item.fields.clientApproved}}"><i class="fa fa-check-circle"></i> Approved by Client</p>
 		<p ng-hide="{{item.fields.clientApproved}}"><i class="fa fa-times-circle"></i> Not Yet Approved</p></a></span>
 	</div>
-</div>
+</div> -->
 
-
-</div>
+<!-- BREAK -->
+<br/><br/>
