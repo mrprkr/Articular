@@ -1,4 +1,5 @@
 //This is the sytlesheet which is written in SCSS
+$sky_blue: #48b8d0;
 
 * {
 	margin:0;
@@ -135,4 +136,9 @@ hr {
 		font-size: 13px;
 		color: #666;
 	}
+}
+
+.colourSwatch {
+	display: block;
+	background-color: #444;
 }
