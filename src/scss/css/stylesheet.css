@@ -4,10 +4,14 @@
   font-family: Arial, sans-serif; }
 
 a {
-  color: #444;
+  color: #48b8d0;
   text-decoration: none; }
   a:hover {
-    border-bottom: 2px solid #444; }
+    border-bottom: 2px solid #48b8d0; }
+
+p {
+  font-size: 13px;
+  line-height: 20px; }
 
 .contentContainer {
   width: 900px;
@@ -48,6 +52,12 @@ hr {
       border-bottom: 2px solid #444; }
     .designNav a.selected {
       font-weight: bold; }
+  .designNav i {
+    padding-right: 20px; }
+
+select {
+  height: 20px;
+  background-color: #fff; }
 
 .imageHolder {
   display: inline-block;
@@ -73,6 +83,21 @@ hr {
     line-height: 20px; }
   .textHolder i {
     padding-right: 7px; }
+
+table {
+  font-size: 13px;
+  border-collapse: collapse; }
+
+th, td {
+  padding-right: 30px;
+  padding-bottom: 20px; }
+
+th {
+  text-align: left;
+  font-weight: bold; }
+
+#tableHeader {
+  font-weight: bold; }
 
 .designLink {
   cursor: pointer; }
