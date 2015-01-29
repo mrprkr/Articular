@@ -22,12 +22,12 @@
 
 
 <!-- TABLE RESULTS -->
-<table>
+<table width="100%">
 	<tr>
 		<th><i class="fa fa-user"></i></th>
 		<th width="">Page</th><th width="">Page State</th>
-		<th width="">Rev</th><th width="">Last Updated</th>
-		<th>Open</th>
+		<th style="text-align:center; padding-right:40px">Rev</th><th width="">Last Updated</th>
+		<th style="text-align:center; padding-right:0px">Open</th>
 		</tr>
 	<!-- REPEATER -->
 		<tr ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'" height="30px">
@@ -37,9 +37,9 @@
 			</td>
 		<td>{{item.fields.name}}</td>
 		<td>{{item.fields.pageState}}</td>
-		<td><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
+		<td style="text-align:center; padding-right:40px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
 		<td>{{theDate(item.sys.updatedAt)}}</td>
-		<td><a href="#design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
+		<td style="text-align:center; padding-right:0px; font-size: 17px"><a href="#design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
 		</tr>
 	</table>
 

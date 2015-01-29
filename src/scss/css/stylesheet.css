@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; }
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.2px; }
 
 a {
-  color: #48b8d0;
-  text-decoration: none; }
+  color: #2a8da2;
+  text-decoration: none;
+  font-size: 15px; }
   a:hover {
+    color: #48b8d0;
     border-bottom: 2px solid #48b8d0; }
 
 p {
@@ -15,23 +18,32 @@ p {
 
 .contentContainer {
   width: 900px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px; }
 
 nav {
-  margin-bottom: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   display: block;
   text-align: right; }
   nav a {
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2a8da2; }
+    nav a:hover {
+      color: #48b8d0; }
+
+#strapline {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1.55px; }
 
 h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2.2px; }
 
 hr {
   border: 0;
@@ -53,10 +65,10 @@ hr {
     .designNav a.selected {
       font-weight: bold; }
   .designNav i {
-    padding-right: 20px; }
+    padding-right: 30px; }
 
 select {
-  height: 20px;
+  height: 25px;
   background-color: #fff; }
 
 .imageHolder {
@@ -67,7 +79,6 @@ select {
     width: 500px;
     background-color: #EFEFEF;
     box-shadow: 0px 0px 4px #ccc;
-    margin-bottom: 40px;
     cursor: zoom-in !important; }
   .imageHolder a:hover {
     border: none;

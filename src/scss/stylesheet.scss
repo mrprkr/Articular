@@ -6,12 +6,15 @@
 	font:{
 		family: Arial, sans-serif;
 	}
+	letter-spacing: 0.2px;
 }
 
 a {
-	color: #48b8d0;
+	color: darken(#48b8d0, 15%);
 	text-decoration: none;
+	font-size: 15px;
 	&:hover {
+		color: #48b8d0;
 		border-bottom: 2px solid #48b8d0;
 	}
 }
@@ -21,6 +24,7 @@ p {
 		size: 13px;
 	}
 	line-height: 20px;
+
 }
 
 
@@ -29,7 +33,7 @@ p {
 .contentContainer {
 	width: 900px;
 	margin: {
-		top: 10px;
+		top: 30px;
 		left: auto;
 		right: auto;
 	}
@@ -41,21 +45,32 @@ p {
 
 nav {
 	margin: {
-		bottom: 20px;
+		bottom: 10px;
 	}
-	padding-top: 10px;
-	padding-bottom: 10px;
 	display: block;
 	& a {
 		margin: {
 			left: 20px;
 		}
+		font-size: 13px;
+		text-transform: uppercase;
+		color: darken(#48b8d0, 15%);
+		&:hover {
+			color: #48b8d0;
+		}
 	}
 	text-align: right;
 }
 
+#strapline {
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 1.55px;
+}
+
 h1 {
 	text-transform: uppercase;
+	letter-spacing: 2.2px;
 }
 hr {
     border: 0;
@@ -87,12 +102,12 @@ hr {
 	}
 	text-transform: uppercase;
 	& i {
-		padding-right: 20px
+		padding-right: 30px
 	}
 }
 
 select {
-	height:20px;
+	height:25px;
 	background-color: #fff;
 }
 
@@ -105,7 +120,6 @@ select {
 		// min-height: 200px;
 		background-color: #EFEFEF;
 		box-shadow: 0px 0px 4px #ccc;
-		margin-bottom: 40px;
 		cursor: zoom-in !important;
 	}
 	& a {
