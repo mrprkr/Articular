@@ -60,6 +60,12 @@ app.controller('mainController', function($scope, contentfulClient){
 			return "color: red";
 		}
 	};
+
+	//filter by approved or not
+	$scope.filterToNotApproved = false;
+	$scope.filterApproval = function(value){
+		$scope.filterToNotApproved = value;
+	};
 });
 
 app.controller('designController', function($scope, contentfulClient, $routeParams, $sce){
