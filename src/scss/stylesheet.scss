@@ -191,14 +191,21 @@ table {
 
 th,td {
     padding:{
-    	right: 30px;
-    	bottom: 20px;
+    	right: 20px;
+    	bottom: 10px;
+    	top: 10px;
+    	left:10px;
     	}
 }
 
 th {
 	text-align: left;
 	font-weight: bold;
+}
+
+tr:hover {
+	background-color: #EFEFEF;
+
 }
 
 #tableHeader {

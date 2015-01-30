@@ -31,12 +31,12 @@
 <p ng-bind-html="toTrusted(pageLoaded.fields.description)"></p>
 <br/>
 
-<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments: <br/>{{pageLoaded.fields.comments}}</p>
+<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments: <br/>{{pageLoaded.fields.comments}}</p><br/>
 
 
 <p><i class="fa fa-file-o"></i> Related Pages:</p>
-<p ng-repeat="item in entries | filter: relatedFilter | orderBy: 'fields.pageState'">
-<a href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}</a>
-</p>
+<div ng-show="relatedFilter" ng-cloak><p ng-repeat="item in entries | filter: relatedFilter | orderBy: 'fields.pageState'">
+<a href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
+</p></div>
 
 </div>

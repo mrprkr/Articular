@@ -129,12 +129,17 @@ table {
   border-collapse: collapse; }
 
 th, td {
-  padding-right: 30px;
-  padding-bottom: 20px; }
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px; }
 
 th {
   text-align: left;
   font-weight: bold; }
+
+tr:hover {
+  background-color: #EFEFEF; }
 
 #tableHeader {
   font-weight: bold; }
