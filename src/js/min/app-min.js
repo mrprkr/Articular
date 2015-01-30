@@ -62,6 +62,11 @@ app.controller("mainController", function($scope, contentfulClient) {
         };
         return days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
     };
+    $scope.getStatus = function(item) {
+        if (item.fields.status === "approved") {
+            $scope.approvedStatus = true;
+        }
+    };
 });
 
 app.controller("designController", function($scope, contentfulClient, $routeParams, $sce) {

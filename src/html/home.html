@@ -15,6 +15,13 @@
 	<option value="shop">Shop</option>
 </select>
 
+<!-- <select ng-model="clientApproved">
+	<option value="">All Statuses</option>
+	<option value="Approved">Approved</option>
+	<option value="Conditionally Approved">Conditionally Approved</option>
+	<option value="Awaiting Approval">Awaiting Approval</option>
+	<option value="Design in Progress">Design in Progress</option>
+</select> -->
 
 </div>
 <br/>
@@ -31,9 +38,17 @@
 		</tr>
 	<!-- REPEATER -->
 		<tr ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'" height="30px">
-		<td> 
-			<p ng-show="{{item.fields.clientApproved}}" style="color:green"><i class="fa fa-check-circle"></i></p>
-			<p ng-hide="{{item.fields.clientApproved}}" style="color:red"><i class="fa fa-times-circle"></i></p>
+		<td>
+			<p ng-if="item.fields.status == 'Approved'" style="color: green">
+				<i class="fa fa-check-circle"></i></p>
+			<p ng-if="item.fields.status == 'Conditionally Approved'" style="color: #006992">
+				<i class="fa fa-check-circle"></i></p>
+			<p ng-if="item.fields.status == 'Awaiting Approval'" style="color:#d93f3d">
+				<i class="fa fa-flag"></i></p>
+			<p ng-if="item.fields.status == 'Design in Progress'">
+				<i class="fa fa-magic"></i></p>
+			<p ng-if="item.fields.status == undefined" style="color:#aaa">
+				<i class="fa fa-question-circle"></i></p>
 			</td>
 		<td>{{item.fields.name}}</td>
 		<td>{{item.fields.pageState}}</td>

@@ -89,6 +89,11 @@ app.controller('mainController', function($scope, contentfulClient){
 		return days[date.getDay()]+", "+date.getDate()+dateSuffix(date.getDate())+" "+months[date.getMonth()];
 	};
 
+	$scope.getStatus = function(item){
+		if(item.fields.status === "approved"){
+			$scope.approvedStatus = true;
+		}
+	};
 
 	//Spit out the date and time
 	// $scope.dateUpdated = days[date.getDay()]+", "+date.getDate()+dateSuffix(date.getDate())+" "+months[date.getMonth()]+", "+date.getFullYear();
