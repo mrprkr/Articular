@@ -5,24 +5,17 @@
 </div> -->
 <div class="designNav">
 <!-- <i class="fa fa-file-o"></i> --><i class="fa fa-filter"></i>
-<select ng-model="listFilter">
-	<option value="">All Pages</option>
-	<option value="global">Global</option>
-	<option value="education">Education</option>
-	<option value="home">Homepage</option>
-	<option value="news">News</option>
-	<option value="event">Event</option>
-	<option value="shop">Shop</option>
+
+<select ng-model="pageFilter.fields.name" ng-options="item.name as item.name for item in pageItems">
+	<option ng-selected="" value="">All Pages</option>
 </select>
 
-<!-- <select ng-model="clientApproved">
+<select ng-model="statusFilter" ng-options="status.name as status.name for status in statusItems">
 	<option value="">All Statuses</option>
-	<option value="Approved">Approved</option>
-	<option value="Conditionally Approved">Conditionally Approved</option>
-	<option value="Awaiting Approval">Awaiting Approval</option>
-	<option value="Design in Progress">Design in Progress</option>
-</select> -->
+</select>
 
+<span id="search"><input placeholder="search" id="searchText" type="text" ng-model="searchText.fields.name">
+<i class="fa fa-search"></i></span>
 </div>
 <br/>
 
@@ -31,13 +24,14 @@
 <!-- TABLE RESULTS -->
 <table width="100%">
 	<tr>
-		<th><i class="fa fa-user"></i></th>
-		<th width="">Page</th><th width="">Page State</th>
-		<th style="text-align:center; padding-right:40px">Rev</th><th width="">Last Updated</th>
+		<th width="30px"><i class="fa fa-user"></i></th>
+		<th width="220px">Page</th>
+		<th width="230px">Page State</th>
+		<th width="40px" style="text-align:center; padding-right:40px">Rev</th><th width="">Last Updated</th>
 		<th style="text-align:center; padding-right:0px">Open</th>
 		</tr>
 	<!-- REPEATER -->
-		<tr ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'" height="30px">
+		<tr ng-repeat="item in entries | filter: pageFilter.fields.name | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="30px">
 		<td>
 			<p ng-if="item.fields.status == 'Approved'" style="color: green">
 				<i class="fa fa-check-circle"></i></p>

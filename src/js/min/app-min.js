@@ -62,11 +62,26 @@ app.controller("mainController", function($scope, contentfulClient) {
         };
         return days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
     };
-    $scope.getStatus = function(item) {
-        if (item.fields.status === "approved") {
-            $scope.approvedStatus = true;
-        }
-    };
+    $scope.pageItems = [ {
+        name: "Homepage"
+    }, {
+        name: "Education"
+    }, {
+        name: "Events"
+    }, {
+        name: "Membership"
+    }, {
+        name: "Generic"
+    } ];
+    $scope.statusItems = [ {
+        name: "Approved"
+    }, {
+        name: "Conditionally Approved"
+    }, {
+        name: "Awaiting Approval"
+    }, {
+        name: "Design in Progress"
+    } ];
 });
 
 app.controller("designController", function($scope, contentfulClient, $routeParams, $sce) {

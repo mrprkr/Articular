@@ -9,6 +9,10 @@
 	letter-spacing: 0.2px;
 }
 
+html {
+	overflow-y: scroll;
+}
+
 a {
 	color: darken(#48b8d0, 15%);
 	text-decoration: none;
@@ -79,6 +83,11 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+::selection {
+	color: #fff;
+    background: #333; /* WebKit/Blink Browsers */
+}
+
 .designNav {
 	padding:{
 		top: 5px;
@@ -105,6 +114,31 @@ hr {
 		padding-right: 30px
 	}
 }
+
+#search {
+	text-align: right;
+	float: right;
+	margin-left: 15px;
+	font-size: 15px;
+	color: #AAA;
+	& i {
+		padding-right: 0px;
+	}
+	& input[type=text] {
+		border: none;
+		font-size: 15px;
+		&:focus {
+			border: none;
+			outline: none
+		}
+	}
+}
+#searchText {
+	padding: 5px;
+	width: 180px;
+	text-align:right;
+}
+
 
 select {
 	height:25px;

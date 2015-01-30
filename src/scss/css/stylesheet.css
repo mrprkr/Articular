@@ -4,6 +4,9 @@
   font-family: Arial, sans-serif;
   letter-spacing: 0.2px; }
 
+html {
+  overflow-y: scroll; }
+
 a {
   color: #2a8da2;
   text-decoration: none;
@@ -51,6 +54,11 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
+::selection {
+  color: #fff;
+  background: #333;
+  /* WebKit/Blink Browsers */ }
+
 .designNav {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -66,6 +74,26 @@ hr {
       font-weight: bold; }
   .designNav i {
     padding-right: 30px; }
+
+#search {
+  text-align: right;
+  float: right;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #AAA; }
+  #search i {
+    padding-right: 0px; }
+  #search input[type=text] {
+    border: none;
+    font-size: 15px; }
+    #search input[type=text]:focus {
+      border: none;
+      outline: none; }
+
+#searchText {
+  padding: 5px;
+  width: 180px;
+  text-align: right; }
 
 select {
   height: 25px;
