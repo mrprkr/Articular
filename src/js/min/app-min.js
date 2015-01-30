@@ -125,6 +125,7 @@ app.controller("designController", function($scope, contentfulClient, $routePara
                 return false;
             }
         };
+        $scope.relatedFilter = $scope.pageLoaded.fields.name;
     });
     $scope.toTrusted = function(data) {
         return $sce.trustAsHtml(data);

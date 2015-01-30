@@ -165,6 +165,8 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 				return false;
 			}
 		};
+
+		$scope.relatedFilter = $scope.pageLoaded.fields.name;
 	
 	});
 
