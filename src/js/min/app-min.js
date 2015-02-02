@@ -12,6 +12,9 @@ app.config(function($routeProvider, contentfulClientProvider) {
     }).when("/documentation", {
         templateUrl: "src/html/documentation.html",
         controller: "documentationController"
+    }).when("/journeys", {
+        templateUrl: "src/html/journeys.html",
+        controller: "journeysController"
     }).when("/design/:id", {
         templateUrl: "src/html/design.html",
         controller: "designController"
@@ -23,7 +26,9 @@ app.config(function($routeProvider, contentfulClientProvider) {
 });
 
 app.controller("mainController", function($scope, contentfulClient) {
-    contentfulClient.entries().then(function(entries) {
+    contentfulClient.entries({
+        content_type: "3P0nCdvt7200MEOKUYge8e"
+    }).then(function(entries) {
         $scope.entries = entries;
     });
     $scope.listFilter = "";
@@ -102,7 +107,9 @@ app.controller("mainController", function($scope, contentfulClient) {
 });
 
 app.controller("designController", function($scope, contentfulClient, $routeParams, $sce) {
-    contentfulClient.entries().then(function(entries) {
+    contentfulClient.entries({
+        content_type: "3P0nCdvt7200MEOKUYge8e"
+    }).then(function(entries) {
         $scope.entries = entries;
         for (var x in $scope.entries) {
             if (entries[x].sys.id === $routeParams.id) {
@@ -155,4 +162,13 @@ app.controller("documentationController", function($scope) {
 
 app.controller("styleguideController", function($scope) {
     $scope.designTest = "scope works in Design";
+});
+
+app.controller("journeysController", function($scope, contentfulClient) {
+    contentfulClient.entries({
+        content_type: "3EoQ2epw1OcM8YYGwqiKa0"
+    }).then(function(entries) {
+        $scope.journeys = entries;
+        console.log($scope.journeys);
+    });
 });
