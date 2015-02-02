@@ -1,7 +1,41 @@
-<br/>
+
+<p style="color:red"><i class="fa fa-magic"></i> This page is currently in development - Images may take some time to load</p><br/>
+<p><a href="#/journeys">Back to all journeys</a></p><br/>
+<!-- <br/>
 <h2>{{journeyLoaded.fields.name}}</h2>
 <p>{{journeyLoaded.fields.description}}</p><br/>
 <p>Pages:</p>
 <div ng-repeat="pages in journeyLoaded.fields.pages" style="font-size:13px; padding-left:10px; line-height:17px">
 		<a ng-href="#design/{{pages.sys.id}}">{{pages.fields.name}} - {{pages.fields.pageState}}</a>
 	</div>
+<br/><br/>
+<hr/> -->
+<div class="pageContainer">
+	<div class="pagePreview">
+		<img class="images-loaded" ng-src="{{journeyLoaded.fields.pages[showingPage].fields.image.fields.file.url}}" width="100%">
+		</div>
+
+	<div class="sidebar">
+		<div class="tools">
+			<h2>{{journeyLoaded.fields.name}}</h2>
+			<p ng-bind-html="toTrusted(journeyLoaded.fields.description)"></p> <br/>
+			<p> Page {{showingPage + 1}} of {{journeyLoaded.fields.pages.length}} </p>
+			<button ng-disabled="showingPage < 1" ng-click="previousPage()">Previous Page</button>
+			<button ng-disabled="showingPage >= journeyLoaded.fields.pages.length -1" ng-click="nextPage()">Next Page</button>
+			</div>
+
+		<div class="pageInfo">
+			<hr/><br/>
+			<p><i class="fa fa-file-o"></i> Page Name:</p>
+			<p>{{journeyLoaded.fields.pages[showingPage].fields.name}} - {{journeyLoaded.fields.pages[showingPage].fields.pageState}}</p>
+			<br/>
+			<p><i class="fa fa-file-text-o"></i> Description:</p>
+			<p>{{journeyLoaded.fields.pages[showingPage].fields.description}}</p>
+			<br/>
+			<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments:</p>
+			<p>{{journeyLoaded.fields.pages[showingPage].fields.comments}}</p>
+
+			</div>
+		</div>
+
+</div>

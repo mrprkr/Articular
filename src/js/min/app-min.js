@@ -1,6 +1,6 @@
 var angular = angular;
 
-var app = angular.module("app", [ "ngRoute", "ng-contentful" ]);
+var app = angular.module("app", [ "ngRoute", "ng-contentful", "angular-images-loaded" ]);
 
 app.config(function($routeProvider, contentfulClientProvider) {
     $routeProvider.when("/", {
@@ -167,7 +167,7 @@ app.controller("styleguideController", function($scope) {
     $scope.designTest = "scope works in Design";
 });
 
-app.controller("journeysController", function($scope, contentfulClient, $routeParams) {
+app.controller("journeysController", function($scope, contentfulClient, $routeParams, $sce) {
     contentfulClient.entries({
         content_type: "3EoQ2epw1OcM8YYGwqiKa0"
     }).then(function(entries) {
@@ -177,5 +177,26 @@ app.controller("journeysController", function($scope, contentfulClient, $routePa
                 $scope.journeyLoaded = $scope.journeys[x];
             }
         }
+        $scope.showingPage = 0;
+        $scope.nextPage = function() {
+            if ($scope.showingPage + 1 < $scope.journeyLoaded.fields.pages.length) {
+                $scope.showingPage += 1;
+            }
+        };
+        $scope.previousPage = function() {
+            if ($scope.showingPage > 0) {
+                $scope.showingPage -= 1;
+            }
+        };
+        $scope.hasComments = function() {
+            if ($scope.journeyLoaded.fields.comments !== undefined) {
+                return true;
+            } else {
+                return false;
+            }
+        };
     });
+    $scope.toTrusted = function(data) {
+        return $sce.trustAsHtml(data);
+    };
 });

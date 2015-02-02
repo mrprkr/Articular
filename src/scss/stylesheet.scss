@@ -236,3 +236,44 @@ tr:hover {
 	display: none;
 }
 
+//JOURNEY PAGE STYLES 
+
+
+.pageContainer {
+	display: block;
+	width: 100%
+}
+
+.pagePreview {
+	display: inline-block;
+	width: 500px;
+	vertical-align: top;
+}
+
+.sidebar {
+	display: inline-block;
+	width: 340px;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+	// background-color: grey;
+	& button {
+		padding: 5px;
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+}
+.pageInfo {
+	margin-top: 20px;
+}
+
+.loaded {
+	opacity: 1 !important;
+}
+
+.images-loaded {
+	opacity: 0;
+}
+
+
+

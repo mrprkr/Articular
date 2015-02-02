@@ -1,6 +1,6 @@
 //Initilise angular app
 var angular = angular;
-var app = angular.module('app', ['ngRoute', 'ng-contentful']);
+var app = angular.module('app', ['ngRoute', 'ng-contentful', 'angular-images-loaded']);
 
 app.config(function($routeProvider, contentfulClientProvider){
 	$routeProvider
@@ -211,7 +211,9 @@ app.controller('styleguideController', function($scope){
 
 });
 
-app.controller('journeysController', function($scope, contentfulClient, $routeParams){
+
+//JOURNEY DETAIL CONTROLLER
+app.controller('journeysController', function($scope, contentfulClient, $routeParams, $sce){
 	contentfulClient.entries({'content_type':'3EoQ2epw1OcM8YYGwqiKa0'}).then(function(entries){
 		$scope.journeys = entries;
 
@@ -222,9 +224,34 @@ app.controller('journeysController', function($scope, contentfulClient, $routePa
 			}
 		}
 
+		//Pagenation helper functions
+		$scope.showingPage = 0;
+		$scope.nextPage = function(){
+			if($scope.showingPage + 1 < $scope.journeyLoaded.fields.pages.length){
+				$scope.showingPage += 1;
+			}
+		};
+		$scope.previousPage = function(){
+			if($scope.showingPage > 0){
+				$scope.showingPage -= 1;
+			}
+		};
+
+		$scope.hasComments = function(){
+			if($scope.journeyLoaded.fields.comments !== undefined){
+				return true;
+			}
+			else{
+				return false;
+			}
+		};
+
+    }); //end of CMS query
+
+	$scope.toTrusted = function(data){
+		return $sce.trustAsHtml(data);
+	};
 
 
-
-	});
-});
+}); //end of controller
 
