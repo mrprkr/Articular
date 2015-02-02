@@ -1,8 +1,12 @@
+ <script type="text/javascript">
+ document.getElementById("searchText").focus();
+ </script>
+<span id="search"><input placeholder="search" id="searchText" type="text" ng-model="searchText">
+<i class="fa fa-search"></i></span>
 
-<p style="color:red"><i class="fa fa-magic"></i> This page is currently in development</p><br/>
 <h2> Core User Journeys</h2>
 <br/>
-<div ng-repeat="item in journeys" style="margin-bottom: 20px">
+<div ng-repeat="item in journeys | filter: searchText" style="margin-bottom: 20px">
 <a ng-href="#/journey/{{item.sys.id}}">{{item.fields.name}}</a>
 <p>{{item.fields.description}}</p>
 	

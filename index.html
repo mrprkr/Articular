@@ -16,17 +16,18 @@
 <body ng-controller="mainController">
 
 <div class="contentContainer">
-	<h1>Articular</h1>
-	<p id="strapline">Speak the same language</p>
+	<p style="color:red; font-size:11px; text-align:right"><i class="fa fa-code"></i> Under Development <a style="font-size:inherit; color: red; text-decoration: underline;"href="mailto:mparker@brandnewmedia.com.au">report a bug</a></p>
+	<h1><a href="#/">Articular</a></h1>
+<!-- 	<p id="strapline">Speak the same language</p> -->
 	<nav>
-	<a href="#/">Pages</a>
 	<a href="#/journeys">Journeys</a>
+	<a href="#/pages">Pages</a>
 	<!-- <a href="#documentation">Documentation</a> -->
 	<a href="#styleguide">Styleguide</a>
 	</nav>
-
 	<hr>
 	<br/>
+
 	<ng-view></ng-view>
 </div>
 </body>

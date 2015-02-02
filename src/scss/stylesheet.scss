@@ -37,7 +37,7 @@ p {
 .contentContainer {
 	width: 900px;
 	margin: {
-		top: 30px;
+		top: 4px;
 		left: auto;
 		right: auto;
 	}
@@ -50,6 +50,7 @@ p {
 nav {
 	margin: {
 		bottom: 10px;
+		top: - 20px;
 	}
 	display: block;
 	& a {
@@ -75,6 +76,14 @@ nav {
 h1 {
 	text-transform: uppercase;
 	letter-spacing: 2.2px;
+	& a {
+		font-size: inherit;
+		color: #333;
+		&:hover {
+			border-bottom: none;
+			color: #666;
+		}
+	}
 }
 
 hr {

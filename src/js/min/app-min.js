@@ -6,12 +6,12 @@ app.config(function($routeProvider, contentfulClientProvider) {
     $routeProvider.when("/", {
         templateUrl: "src/html/home.html",
         controller: "mainController"
+    }).when("/pages", {
+        templateUrl: "src/html/pages.html",
+        controller: "mainController"
     }).when("/styleguide", {
         templateUrl: "src/html/styleguide.html",
         controller: "styleguideController"
-    }).when("/documentation", {
-        templateUrl: "src/html/documentation.html",
-        controller: "documentationController"
     }).when("/journeys", {
         templateUrl: "src/html/journeys.html",
         controller: "journeysController"

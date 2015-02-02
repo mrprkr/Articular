@@ -9,14 +9,14 @@ app.config(function($routeProvider, contentfulClientProvider){
 			controller: 'mainController'
 		})
 
+		.when('/pages', {
+			templateUrl: "src/html/pages.html",
+			controller: 'mainController'
+		})
+
 		.when('/styleguide', {
 			templateUrl: "src/html/styleguide.html",
 			controller: 'styleguideController'
-		})
-
-		.when('/documentation', {
-			templateUrl: "src/html/documentation.html",
-			controller: 'documentationController'
 		})
 
 		.when('/journeys', {

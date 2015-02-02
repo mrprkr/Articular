@@ -12,19 +12,20 @@
 <p>{{pageLoaded.fields.pageState}}</p>
 <!-- <br/>
 <p><i class="fa fa-map-marker"></i> {{pageLoaded.fields.stakeholder}}</p> -->
-<br/>
-<p><i class="fa fa-code-fork" style="padding-left:2px; margin-right:2px"></i> {{revision()}}</p>
-<p><i class="fa fa-clock-o"></i> {{timeUpdated}} on {{dateUpdated}}</p>
-			<p ng-if="pageLoaded.fields.status == 'Approved'" style="color: green">
-				<i class="fa fa-check-circle"></i> Approved</p>
-			<p ng-if="pageLoaded.fields.status == 'Conditionally Approved'" style="color: #006992">
-				<i class="fa fa-check-circle"></i> Conditionally Approved</p>
-			<p ng-if="pageLoaded.fields.status == 'Awaiting Approval'" style="color:#d93f3d">
-				<i class="fa fa-flag"></i> Awaiting Approval</p>
-			<p ng-if="pageLoaded.fields.status == 'Design in Progress'">
-				<i class="fa fa-magic"></i> Design in Progress</p>
-			<p ng-if="pageLoaded.fields.status == undefined" style="color:#aaa">
-				<i class="fa fa-question-circle"></i> Status unknown</p>
+	<br/>
+	<p><i class="fa fa-code-fork" style="padding-left:2px; margin-right:2px"></i> {{revision()}}</p>
+	<p><i class="fa fa-clock-o"></i> {{timeUpdated}} on {{dateUpdated}}</p>
+	<p><i class="fa fa-database"></i> Asset: {{pageLoaded.sys.id}}</p>
+	<p ng-if="pageLoaded.fields.status == 'Approved'" style="color: green">
+		<i class="fa fa-check-circle"></i> Approved</p>
+	<p ng-if="pageLoaded.fields.status == 'Conditionally Approved'" style="color: #006992">
+		<i class="fa fa-check-circle"></i> Conditionally Approved</p>
+	<p ng-if="pageLoaded.fields.status == 'Awaiting Approval'" style="color:#d93f3d">
+		<i class="fa fa-flag"></i> Awaiting Approval</p>
+	<p ng-if="pageLoaded.fields.status == 'Design in Progress'">
+		<i class="fa fa-magic"></i> Design in Progress</p>
+	<p ng-if="pageLoaded.fields.status == undefined" style="color:#aaa">
+		<i class="fa fa-question-circle"></i> Status unknown</p>
 
 <br/>
 <p><i class="fa fa-file-text-o"></i> Description:</p>
