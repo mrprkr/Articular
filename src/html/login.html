@@ -1,0 +1,48 @@
+<style type="text/css">
+input {
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 250px;
+	font-size: 15px;
+}
+
+button {
+	padding: 10px;
+	width: 265px;
+	color: #fff;
+	background-color: #48B8D0;
+	border: none;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+button:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.logInForm {
+	display: block;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	padding: 40px;
+	box-shadow: 0px 0px 2px #AAA;
+}
+</style>
+
+<div class="logInForm">
+	<h1><i class="fa fa-lock"></i></h1>
+	<!-- <p>Please log in:</p> -->
+	<br/>
+<form ua-login>
+	<input name="login" placeholder="Username"><br>
+	<input name="password" placeholder="Password" type="password"><br>	
+	<p ng-show="loading"><img src="https://app.userapp.io/img/ajax-loader-transparent.gif"></p>
+	<p><button type="submit">Log in</button></p>
+	<p ng-show="error">{{ error.message }}</p>
+</form>
+</div>

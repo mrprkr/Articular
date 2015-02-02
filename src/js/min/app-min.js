@@ -1,11 +1,21 @@
 var angular = angular;
 
-var app = angular.module("app", [ "ngRoute", "ng-contentful", "angular-images-loaded" ]);
+var app = angular.module("app", [ "ngRoute", "ng-contentful", "angular-images-loaded", "UserApp" ]);
+
+app.run(function(user) {
+    user.init({
+        appId: "54cf58a9d625c"
+    });
+});
 
 app.config(function($routeProvider, contentfulClientProvider) {
     $routeProvider.when("/", {
         templateUrl: "src/html/home.html",
         controller: "mainController"
+    }).when("/login", {
+        templateUrl: "src/html/login.html",
+        controller: "loginController",
+        login: true
     }).when("/pages", {
         templateUrl: "src/html/pages.html",
         controller: "mainController"
@@ -27,6 +37,8 @@ app.config(function($routeProvider, contentfulClientProvider) {
     contentfulClientProvider.setSpaceId("qj4662rfubip");
     contentfulClientProvider.setAccessToken("c35b82ea8c5dad62950fa76f7a3c05459a8c4166b4d1ecdf7e52048757d6a50c");
 });
+
+app.controller("loginController", function($scope) {});
 
 app.controller("mainController", function($scope, contentfulClient) {
     contentfulClient.entries({
