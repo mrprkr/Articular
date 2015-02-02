@@ -32,8 +32,6 @@ p {
 }
 
 
-
-
 .contentContainer {
 	width: 900px;
 	margin: {
@@ -75,7 +73,7 @@ nav {
 
 h1 {
 	text-transform: uppercase;
-	letter-spacing: 2.2px;
+	letter-spacing: 1px;
 	& a {
 		font-size: inherit;
 		color: #333;
@@ -245,6 +243,10 @@ tr:hover {
 	display: none;
 }
 
+.hex {
+	text-transform: uppercase;
+}
+
 //JOURNEY PAGE STYLES 
 
 
@@ -272,6 +274,13 @@ tr:hover {
 		margin-top: 5px;
 	}
 }
+
+#steps {
+	margin:{
+		left: 20px;
+	}
+}
+
 .pageInfo {
 	margin-top: 20px;
 }
