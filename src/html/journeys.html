@@ -1,3 +1,11 @@
+
+
+<h2> Core User Journeys</h2>
+<br/><br/>
+
 <div ng-repeat="item in journeys">
-<li>{{item.fields.name}}</li>
+{{item.fields.name}}:
+	<div ng-repeat="pages in item.fields.pages" style="font-size:13px; padding-left:10px">
+		<a ng-href="#design/{{pages.sys.id}}">{{pages.fields.name}} - {{pages.fields.pageState}}</a>
+	</div>
 </div>
