@@ -6,8 +6,8 @@
 <div class="designNav">
 <!-- <i class="fa fa-file-o"></i> --><i class="fa fa-filter"></i>
 
-<select ng-model="pageFilter.fields.name" ng-options="item.name as item.name for item in pageItems">
-	<option ng-selected="" value="">All Pages</option>
+<select ng-model="pageFilter" ng-options="item.value as item.name for item in pageItems">
+	<option value="">All Pages</option>
 </select>
 
 <select ng-model="statusFilter" ng-options="status.name as status.name for status in statusItems">
@@ -24,6 +24,8 @@
 </div>
 <br/>
 
+Page filter: {{pageFilter}} <br/><br/>
+<!-- Entries: {{entries[0].fields.name}} -->
 
 
 <!-- TABLE RESULTS -->
@@ -36,7 +38,7 @@
 		<th style="text-align:right;">Open</th>
 		</tr>
 	<!-- REPEATER -->
-		<tr ng-repeat="item in entries | filter: pageFilter.fields.name | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="30px">
+		<tr ng-repeat="item in entries | filter: pageFilter | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="30px">
 		<td>
 			<p ng-if="item.fields.status == 'Approved'" style="color: green">
 				<i class="fa fa-check-circle"></i></p>

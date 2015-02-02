@@ -63,15 +63,32 @@ app.controller("mainController", function($scope, contentfulClient) {
         return days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
     };
     $scope.pageItems = [ {
-        name: "Homepage"
+        name: "Homepage",
+        value: "Homepage"
     }, {
-        name: "Education"
+        name: "Education",
+        value: "Education"
     }, {
-        name: "Events"
+        name: "Events",
+        value: "Events"
     }, {
-        name: "Membership"
+        name: "Membership",
+        value: "Membership"
     }, {
-        name: "Generic"
+        name: "About",
+        value: "About"
+    }, {
+        name: "Error",
+        value: "Error Page"
+    }, {
+        name: "Global",
+        value: "Global"
+    }, {
+        name: "Search",
+        value: "Search"
+    }, {
+        name: "Shop",
+        value: "Shop"
     } ];
     $scope.statusItems = [ {
         name: "Approved"

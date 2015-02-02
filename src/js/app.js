@@ -90,8 +90,21 @@ app.controller('mainController', function($scope, contentfulClient){
 	};
 
 	$scope.pageItems = [
-		{'name': 'Homepage'}, {'name':'Education'}, {'name':'Events'}, {'name':'Membership'}, {'name':'Generic'}
+		// {'name': 'All Pages', 'value': ''}, 
+		{'name': 'Homepage', 'value': 'Homepage'}, 
+		{'name':'Education', 'value': 'Education'}, 
+		{'name':'Events', 'value': 'Events'}, 
+		{'name':'Membership', 'value': 'Membership'}, 
+		{'name':'About', 'value': 'About'}, 
+		{'name':'Error', 'value': 'Error Page'}, 
+		{'name':'Global', 'value': 'Global'}, 
+		{'name':'Search', 'value': 'Search'}, 
+		{'name':'Shop', 'value': 'Shop'}
 	];
+
+	//overide default page filter
+	// $scope.pageFilter = $scope.pageItems[8].value;
+
 	$scope.statusItems = [
 		{'name': 'Approved'}, {'name':'Conditionally Approved'}, {'name':'Awaiting Approval'}, {'name':'Design in Progress'}
 	];
@@ -165,9 +178,8 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 				return false;
 			}
 		};
-
+		
 		$scope.relatedFilter = $scope.pageLoaded.fields.name;
-	
 	});
 
 	$scope.toTrusted = function(data){
