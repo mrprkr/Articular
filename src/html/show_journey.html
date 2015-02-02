@@ -28,7 +28,7 @@
 		<div class="pageInfo">
 			<hr/><br/>
 			<p><i class="fa fa-file-o"></i> <a href="#/design/{{journeyLoaded.fields.pages[showingPage].sys.id}}">{{journeyLoaded.fields.pages[showingPage].fields.name}} - {{journeyLoaded.fields.pages[showingPage].fields.pageState}}</a></p>
-			<p><i class="fa fa-file-text-o"></i> {{journeyLoaded.fields.pages[showingPage].fields.description}}</p>
+			<p><i class="fa fa-file-text-o"></i> <p ng-bind-html="toTrusted(journeyLoaded.fields.pages[showingPage].fields.description)"></p>
 			<br/>
 <!-- 			<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments:</p>
 			<p>{{journeyLoaded.fields.pages[showingPage].fields.comments}}</p>
