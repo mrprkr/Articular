@@ -23,6 +23,9 @@
 <!-- 	<p id="strapline">Speak the same language</p> -->
 	<nav ng-show="user.authenticated">
 		<!-- <p style="font-size:11px; text-align: right; color: #999">{{ user.first_name }} <i class="fa fa-user"></i> </p> -->
+	<span ng-show="user.permissions.admin.value">
+	<a href="//app.contentful.com" target="_blank">CMS</a>
+	<a href="//app.userapp.io" target="_blank">Users</a></span>
 	<a href="#/journeys">Journeys</a>
 	<a href="#/pages">Pages</a>
 	<!-- <a href="#documentation">Documentation</a> -->
