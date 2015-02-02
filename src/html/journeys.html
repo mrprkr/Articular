@@ -6,8 +6,9 @@
 
 <h2> Core User Journeys</h2>
 <br/>
-<div ng-repeat="item in journeys | filter: searchText" style="margin-bottom: 20px">
+<br/>
+<div ng-repeat="item in journeys | filter: searchText" style="margin-bottom: 25px">
 <a style="font-size: 15px" ng-href="#/journey/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i> {{item.fields.name}}</a>
-<p>{{item.fields.description}}</p>
+<p style="color:#999; padding-left:17px; font-size:12px; width:700px">{{item.fields.description}}</p>
 	
 </div>
