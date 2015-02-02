@@ -1,0 +1,7 @@
+<br/>
+<h2>{{journeyLoaded.fields.name}}</h2>
+<p>{{journeyLoaded.fields.description}}</p><br/>
+<p>Pages:</p>
+<div ng-repeat="pages in journeyLoaded.fields.pages" style="font-size:13px; padding-left:10px; line-height:17px">
+		<a ng-href="#design/{{pages.sys.id}}">{{pages.fields.name}} - {{pages.fields.pageState}}</a>
+	</div>

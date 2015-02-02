@@ -15,6 +15,9 @@ app.config(function($routeProvider, contentfulClientProvider) {
     }).when("/journeys", {
         templateUrl: "src/html/journeys.html",
         controller: "journeysController"
+    }).when("/journey/:id", {
+        templateUrl: "src/html/show_journey.html",
+        controller: "journeysController"
     }).when("/design/:id", {
         templateUrl: "src/html/design.html",
         controller: "designController"
@@ -164,11 +167,15 @@ app.controller("styleguideController", function($scope) {
     $scope.designTest = "scope works in Design";
 });
 
-app.controller("journeysController", function($scope, contentfulClient) {
+app.controller("journeysController", function($scope, contentfulClient, $routeParams) {
     contentfulClient.entries({
         content_type: "3EoQ2epw1OcM8YYGwqiKa0"
     }).then(function(entries) {
         $scope.journeys = entries;
-        console.log($scope.journeys);
+        for (var x in $scope.journeys) {
+            if ($scope.journeys[x].sys.id === $routeParams.id) {
+                $scope.journeyLoaded = $scope.journeys[x];
+            }
+        }
     });
 });

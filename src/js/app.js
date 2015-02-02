@@ -23,6 +23,10 @@ app.config(function($routeProvider, contentfulClientProvider){
 			templateUrl: "src/html/journeys.html",
 			controller: 'journeysController'
 		})
+		.when('/journey/:id', {
+			templateUrl: "src/html/show_journey.html",
+			controller: 'journeysController'
+		})
 
 		.when('/design/:id', {
 			templateUrl: "src/html/design.html",
@@ -207,12 +211,20 @@ app.controller('styleguideController', function($scope){
 
 });
 
-app.controller('journeysController', function($scope, contentfulClient){
-
+app.controller('journeysController', function($scope, contentfulClient, $routeParams){
 	contentfulClient.entries({'content_type':'3EoQ2epw1OcM8YYGwqiKa0'}).then(function(entries){
 		$scope.journeys = entries;
-		console.log($scope.journeys);
-	});
 
+		//find the loaded journey in the array
+		for (var x in $scope.journeys){
+			if($scope.journeys[x].sys.id === $routeParams.id){
+				$scope.journeyLoaded = $scope.journeys[x];
+			}
+		}
+
+
+
+
+	});
 });
 
