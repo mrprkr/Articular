@@ -18,15 +18,18 @@
 <body ng-controller="mainController">
 
 <div class="contentContainer">
-	<p style="color:red; font-size:11px; text-align:right"><i class="fa fa-code"></i> Under Development <a style="font-size:inherit; color: red; text-decoration: underline;"href="mailto:mparker@brandnewmedia.com.au">report a bug</a></p>
+	<p style="color:#999; font-size:11px; text-align:right"><i class="fa fa-code"></i> Under Development <a style="font-size:inherit; color: inherit; text-decoration: underline;"href="mailto:mparker@brandnewmedia.com.au">report a bug</a></p>
 	<h1><a href="#/"><i class="fa fa-comments-o"></i> Articular</a></h1>
 <!-- 	<p id="strapline">Speak the same language</p> -->
 	<nav ng-show="user.authenticated">
+		<!-- <p style="font-size:11px; text-align: right; color: #999">{{ user.first_name }} <i class="fa fa-user"></i> </p> -->
 	<a href="#/journeys">Journeys</a>
 	<a href="#/pages">Pages</a>
 	<!-- <a href="#documentation">Documentation</a> -->
+	<!-- ng-show="user.permissions.admin.value || user.permissions.developer.value" -->
 	<a href="#styleguide">Styleguide</a>
-	<a href="#" ua-logout>Log Out</a>
+	<a href="#" ua-logout>Log Out </a>
+
 	</nav>
 	<hr>
 	<br/>
