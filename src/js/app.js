@@ -11,6 +11,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 		.when('/', {
 			templateUrl: "src/html/home.html",
 			controller: 'mainController',
+			public: true
 		})
 
 		.when('/login', {

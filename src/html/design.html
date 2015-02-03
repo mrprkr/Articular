@@ -36,8 +36,9 @@
 
 
 <p><i class="fa fa-file-o"></i> Related Pages:</p>
-<div ng-show="relatedFilter" ng-cloak><p ng-repeat="item in entries | filter: relatedFilter:true | orderBy: 'fields.pageState'">
-<a ng-href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
+<div ng-show="relatedFilter" ng-cloak>
+	<p ng-repeat="item in entries | filter: relatedFilter:true | orderBy: 'fields.pageState'">
+	<a ng-href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
 </p></div>
 
 </div>
