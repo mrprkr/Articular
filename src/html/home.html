@@ -1,4 +1,4 @@
-<div id="welcomeContainer" style="width:600px; margin-top:20px">
+<div id="welcomeContainer" style="width:600px; margin-top:20px" ng-show="user.authenticated">
 <h2>Welcome {{user.first_name}}</h2>
 <br/>
 <p>Articular helps everyone communicate by 'articulating' complex design into a common language. There is a consolidated repository of designed <a ng-href="#/pages">pages</a> avaliable, with details of their status, functionality, and itteration history.</p><br/>
@@ -8,5 +8,8 @@
 	<a ng-href="#/pages"><i class="fa fa-arrow-circle-right"></i> Find a Page</a><br/>
 	<a ng-href="#journeys"><i class="fa fa-arrow-circle-right"></i> Find a Journey</a>
 	</div>
+</div>
 
+<div ng-hide="user.authenticated">
+<a ng-href="#/login">Please log in</a>
 </div>

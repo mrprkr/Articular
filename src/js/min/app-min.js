@@ -34,7 +34,7 @@ app.config(function($routeProvider, contentfulClientProvider) {
         templateUrl: "src/html/design.html",
         controller: "designController"
     }).otherwise({
-        redirectTo: "/"
+        redirectTo: "/login"
     });
     contentfulClientProvider.setSpaceId("qj4662rfubip");
     contentfulClientProvider.setAccessToken("c35b82ea8c5dad62950fa76f7a3c05459a8c4166b4d1ecdf7e52048757d6a50c");

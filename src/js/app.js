@@ -46,7 +46,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 		})
 
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/login'
 		});
 
 	 contentfulClientProvider.setSpaceId('qj4662rfubip');
