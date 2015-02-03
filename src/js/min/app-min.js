@@ -149,8 +149,19 @@ app.controller("designController", function($scope, contentfulClient, $routePara
                 return "th";
             }
         };
+        var time = function(h, m) {
+            var hours = h;
+            var minutes = m;
+            if (hours < 10) {
+                hours = "0" + date.getHours();
+            }
+            if (minutes < 10) {
+                minutes = "0" + date.getMinutes();
+            }
+            return hours + ":" + minutes;
+        };
         $scope.dateUpdated = days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()] + ", " + date.getFullYear();
-        $scope.timeUpdated = date.getHours() + ":" + date.getMinutes();
+        $scope.timeUpdated = time(date.getHours(), date.getMinutes());
         $scope.revision = function() {
             var r = $scope.pageLoaded.sys.revision;
             if (r > 1) {
