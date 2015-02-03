@@ -30,7 +30,7 @@
 	<a href="#/pages">Pages</a>
 	<!-- <a href="#documentation">Documentation</a> -->
 	<!-- ng-show="user.permissions.admin.value || user.permissions.developer.value" -->
-	<a href="#styleguide">Styleguide</a>
+	<a ng-show="user.permissions.admin.value || user.permissions.developer.value" href="#styleguide">Styleguide</a>
 	<a href="#" ua-logout>Log Out </a>
 
 	</nav>

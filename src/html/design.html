@@ -1,10 +1,10 @@
-<a href="#/"><i class="fa fa-arrow-circle-left"></i> ALL PAGES</a>
+<a ng-href="#/pages"><i class="fa fa-arrow-circle-left"></i> ALL PAGES</a>
 
 <br/><br/><br/>
 
 <div class="imageHolder" ng-cloak>
 	<a ng-href="{{pageLoaded.fields.image.fields.file.url}}" target="_blank">
-	<img ng-src="{{pageLoaded.fields.image.fields.file.url}}"></a>
+	<img ng-src="{{pageLoaded.fields.image.fields.file.url}}?fit=scale&amp;w=500&amp;fm=png&amp;q=60"></a>
 </div>
 
 <div class="textHolder" ng-cloak>
@@ -37,7 +37,7 @@
 
 <p><i class="fa fa-file-o"></i> Related Pages:</p>
 <div ng-show="relatedFilter" ng-cloak><p ng-repeat="item in entries | filter: relatedFilter:true | orderBy: 'fields.pageState'">
-<a href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
+<a ng-href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
 </p></div>
 
 </div>

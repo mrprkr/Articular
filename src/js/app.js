@@ -27,7 +27,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 		.when('/styleguide', {
 			templateUrl: "src/html/styleguide.html",
 			controller: 'styleguideController',
-			// hasPermission: 'admin'
+			hasPermission: 'admin'
 		})
 
 		.when('/journeys', {
