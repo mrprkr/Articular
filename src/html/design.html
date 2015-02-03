@@ -1,5 +1,4 @@
-<a ng-href="#/pages"><i class="fa fa-arrow-circle-left"></i> ALL PAGES</a>
-
+<a href="/#/pages"><i class="fa fa-arrow-circle-left"></i> ALL PAGES</a>
 <br/><br/><br/>
 
 <div class="imageHolder" ng-cloak>
@@ -36,9 +35,8 @@
 
 
 <p><i class="fa fa-file-o"></i> Related Pages:</p>
-<div ng-show="relatedFilter" ng-cloak>
+<div ng-show="showRelated">
 	<p ng-repeat="item in entries | filter: relatedFilter:true | orderBy: 'fields.pageState'">
-	<a ng-href="#design/{{item.sys.id}}">{{item.fields.pageState}}</a>
+	<a href="/#/design/{{item.sys.id}}">{{item.fields.pageState}}</a>
 </p></div>
-
 </div>

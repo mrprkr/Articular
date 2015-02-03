@@ -34,7 +34,7 @@ app.config(function($routeProvider, contentfulClientProvider) {
         templateUrl: "src/html/design.html",
         controller: "designController"
     }).otherwise({
-        redirectTo: "/login"
+        redirectTo: "/"
     });
     contentfulClientProvider.setSpaceId("qj4662rfubip");
     contentfulClientProvider.setAccessToken("c35b82ea8c5dad62950fa76f7a3c05459a8c4166b4d1ecdf7e52048757d6a50c");
@@ -128,9 +128,12 @@ app.controller("designController", function($scope, contentfulClient, $routePara
         content_type: "3P0nCdvt7200MEOKUYge8e"
     }).then(function(entries) {
         $scope.entries = entries;
+        $scope.showRelated = false;
         for (var x in $scope.entries) {
             if (entries[x].sys.id === $routeParams.id) {
                 $scope.pageLoaded = $scope.entries[x];
+                $scope.relatedFilter = $scope.pageLoaded.fields.name;
+                $scope.showRelated = true;
             }
         }
         var date = new Date($scope.pageLoaded.fields.image.sys.updatedAt);
@@ -158,7 +161,6 @@ app.controller("designController", function($scope, contentfulClient, $routePara
             }
             return r;
         };
-        $scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
         $scope.hasComments = function() {
             if ($scope.pageLoaded.fields.comments !== undefined) {
                 return true;
@@ -166,7 +168,6 @@ app.controller("designController", function($scope, contentfulClient, $routePara
                 return false;
             }
         };
-        $scope.relatedFilter = $scope.pageLoaded.fields.name;
     });
     $scope.toTrusted = function(data) {
         return $sce.trustAsHtml(data);

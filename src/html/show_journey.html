@@ -1,4 +1,4 @@
-<p><a ng-href="#/journeys">Back to all journeys</a></p><br/>
+<p><a ng-href="/#/journeys"><i class="fa fa-arrow-circle-left"></i> ALL JOURNEYS</a></p><br/>
 <!-- <br/>
 <h2>{{journeyLoaded.fields.name}}</h2>
 <p>{{journeyLoaded.fields.description}}</p><br/>
@@ -27,7 +27,7 @@
 
 		<div class="pageInfo">
 			<hr/><br/>
-			<p><i class="fa fa-file-o"></i> <a ng-href="#/design/{{journeyLoaded.fields.pages[showingPage].sys.id}}">{{journeyLoaded.fields.pages[showingPage].fields.name}} - {{journeyLoaded.fields.pages[showingPage].fields.pageState}}</a></p>
+			<p><i class="fa fa-file-o"></i> <a href="#/design/{{journeyLoaded.fields.pages[showingPage].sys.id}}">{{journeyLoaded.fields.pages[showingPage].fields.name}} - {{journeyLoaded.fields.pages[showingPage].fields.pageState}}</a></p>
 			<p><i class="fa fa-file-text-o"></i> Description: <p ng-bind-html="toTrusted(journeyLoaded.fields.pages[showingPage].fields.description)"></p>
 			<br/>
 <!-- 			<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments:</p>

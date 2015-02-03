@@ -46,7 +46,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 		})
 
 		.otherwise({
-			redirectTo: '/login'
+			redirectTo: '/'
 		});
 
 	 contentfulClientProvider.setSpaceId('qj4662rfubip');
@@ -143,19 +143,20 @@ app.controller('mainController', function($scope, contentfulClient){
 
 app.controller('designController', function($scope, contentfulClient, $routeParams, $sce){
 	// $scope.params = $routeParams;
+	// $scope.showPageLoaded = false;
 
 	contentfulClient.entries({'content_type':'3P0nCdvt7200MEOKUYge8e'}).then(function(entries){
 		$scope.entries = entries;
-
+		$scope.showRelated = false;
+		
 		for(var x in $scope.entries){
 			if(entries[x].sys.id === $routeParams.id){
 				$scope.pageLoaded = $scope.entries[x];
+				$scope.relatedFilter = $scope.pageLoaded.fields.name;
+				$scope.showRelated = true;
+				// $scope.showPageLoaded = true;
 			}
 		}
-
-		// $scope.params = $routeParams.id;
-		// $scope.pageLoaded = $scope.entries[$scope.params];
-
 
 		//THIS IS SOME SERIOUS DATE BUSINESS ----Look away, it's magic----
 		var date = new Date($scope.pageLoaded.fields.image.sys.updatedAt);
@@ -193,9 +194,6 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 			return r;
 		};
 
-		//assign a variable based on if the page is approved by client
-		$scope.clientApproved = $scope.pageLoaded.fields.clientApproved;
-
 		$scope.hasComments = function(){
 			if($scope.pageLoaded.fields.comments !== undefined){
 				return true;
@@ -204,14 +202,14 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 				return false;
 			}
 		};
-		
-		$scope.relatedFilter = $scope.pageLoaded.fields.name;
+
 	});
 
 	$scope.toTrusted = function(data){
 		return $sce.trustAsHtml(data);
 	};
 
+	// $scope.relatedFilter = $scope.pageLoaded.fields.name;
 
 });
 
