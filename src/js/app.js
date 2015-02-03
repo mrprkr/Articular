@@ -10,8 +10,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 	$routeProvider
 		.when('/', {
 			templateUrl: "src/html/home.html",
-			controller: 'mainController',
-			public: true
+			controller: 'mainController'
 		})
 
 		.when('/login', {
@@ -148,7 +147,7 @@ app.controller('designController', function($scope, contentfulClient, $routePara
 	contentfulClient.entries({'content_type':'3P0nCdvt7200MEOKUYge8e'}).then(function(entries){
 		$scope.entries = entries;
 		$scope.showRelated = false;
-		
+
 		for(var x in $scope.entries){
 			if(entries[x].sys.id === $routeParams.id){
 				$scope.pageLoaded = $scope.entries[x];
