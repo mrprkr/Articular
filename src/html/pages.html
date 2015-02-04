@@ -28,6 +28,7 @@
 <!-- Entries: {{entries[0].fields.name}} -->
 
 
+
 <!-- TABLE RESULTS -->
 <table width="100%">
 	<tr>
@@ -43,6 +44,7 @@
 	<!-- REPEATER -->
 		<tr ng-repeat="item in entries | filter: pageFilter:true | filter: searchText | filter: statusFilter : true | orderBy: 'fields.pageCategory'" height="20px">
 		<td>
+			<div class="pagePreviewThumb"><img ng-src="{{item.fields.image.fields.file.url}}?w=200"></div>
 			<p ng-if="item.fields.status == 'Approved'" style="color: green">
 				<i class="fa fa-check-circle"></i></p>
 			<p ng-if="item.fields.status == 'Conditionally Approved'" style="color: #006992">

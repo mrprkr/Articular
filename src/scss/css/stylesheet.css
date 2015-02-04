@@ -90,6 +90,18 @@ hr {
   .designNav i {
     padding-right: 30px; }
 
+.pagePreviewThumb {
+  position: absolute;
+  margin-left: -230px;
+  margin-top: -15px;
+  width: 200px;
+  min-height: 50px;
+  display: none;
+  padding: 5px; }
+
+tr:hover .pagePreviewThumb {
+  display: block; }
+
 #search {
   text-align: right;
   float: right;
