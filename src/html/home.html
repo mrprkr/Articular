@@ -1,4 +1,4 @@
-<div id="welcomeContainer" style="width:600px; margin-top:20px" ng-show="user.authenticated">
+<div id="welcomeContainer" style="width:600px; margin-top:20px">
 <h2>Welcome {{user.first_name}}</h2>
 <br/>
 <p>Articular helps everyone communicate by 'articulating' complex design into a common language. There is a consolidated repository of designed <a href="#/pages">pages</a> avaliable, with details of their status, functionality, and itteration history.</p><br/>
@@ -10,6 +10,16 @@
 	</div>
 </div>
 
-<div ng-hide="user.authenticated">
-<a ng-href="#/login">Please log in</a>
+<div class="file bugs">
+<h5>Page Index:</h5>
+<br/>
+<a href="/src/files/SA_design_Index.xlsx" download="SA_design_index_v1_2.xlsx"><i class="fa fa-download"></i> Download v1.2</a>
+</div>
+
+
+<div class="bugs">
+	<p style="color: green"><i class="fa fa-plus-circle"></i> Feature: Navigate to /id/[assetID] to load that page</p> 
+	<br/><hr/><br/>
+	<p style="color: #eca400"><i class="fa fa-exclamation-triangle"></i> Page Design template is not ng-cloaked and flashes {{ on load</p>
+	<p style="color: #eca400"><i class="fa fa-exclamation-triangle"></i> Related Pages do not list as expected</p>
 </div>

@@ -12,6 +12,8 @@ app.config(function($routeProvider, contentfulClientProvider) {
     $routeProvider.when("/", {
         templateUrl: "src/html/home.html",
         controller: "mainController"
+    }).when("/id/:id", {
+        redirectTo: "/design/:id"
     }).when("/login", {
         templateUrl: "src/html/login.html",
         controller: "loginController",
