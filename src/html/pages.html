@@ -7,7 +7,7 @@
 <!-- <i class="fa fa-file-o"></i> --><i class="fa fa-filter"></i>
 
 <select ng-model="pageFilter" ng-options="item.value as item.name for item in pageItems">
-	<option value="">All Pages</option>
+	<option value="">All Categories</option>
 </select>
 
 <select ng-model="statusFilter" ng-options="status.name as status.name for status in statusItems">
@@ -31,14 +31,17 @@
 <!-- TABLE RESULTS -->
 <table width="100%">
 	<tr>
-		<th width="30px"><i class="fa fa-user"></i></th>
-		<th width="220px">Page</th>
-		<th width="230px">Page State</th>
-		<th width="40px" style="text-align:center; padding-right:40px">Rev</th><th width="">Last Updated</th>
+		<th width="20px"><i class="fa fa-user"></i></th>
+		<th width="40px">Index</th>
+		<th width="80px">Category</th>
+		<th width="220px">Page Template</th>
+		<th width="300px">Template State</th>
+		<!-- <th width="40px" style="text-align:center; padding-right:40px">Rev</th>
+		<th width="">Updated</th> -->
 		<th style="text-align:right;">Open</th>
 		</tr>
 	<!-- REPEATER -->
-		<tr ng-repeat="item in entries | filter: pageFilter | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="30px">
+		<tr ng-repeat="item in entries | filter: pageFilter:true | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="20px">
 		<td>
 			<p ng-if="item.fields.status == 'Approved'" style="color: green">
 				<i class="fa fa-check-circle"></i></p>
@@ -51,11 +54,13 @@
 			<p ng-if="item.fields.status == undefined" style="color:#aaa">
 				<i class="fa fa-question-circle"></i></p>
 			</td>
+		<td>{{item.fields.title | limitTo: 5}}</td>
+		<td>{{item.fields.pageCategory}}</td>
 		<td>{{item.fields.name}}</td>
 		<td>{{item.fields.pageState}}</td>
-		<td style="text-align:center; padding-right:40px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td>
-		<td>{{theDate(item.sys.updatedAt)}}</td>
-		<td style="text-align:center; font-size: 17px"><a href="/#/design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
+		<!-- <td style="text-align:center; padding-right:40px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td> -->
+		<!-- <td>{{theDate(item.sys.updatedAt)}}</td> -->
+		<td style="text-align:right; font-size: 17px"><a href="/#/design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
 		</tr>
 	</table>
 

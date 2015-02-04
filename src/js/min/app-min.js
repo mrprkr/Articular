@@ -71,7 +71,7 @@ app.controller("mainController", function($scope, contentfulClient) {
     $scope.theDate = function(value) {
         var date = new Date(value);
         var days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
-        var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        var months = [ "Jan", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
         var dateSuffix = function(date) {
             if (date === 1 || date === 21 || date === 31) {
                 return "st";
@@ -83,7 +83,7 @@ app.controller("mainController", function($scope, contentfulClient) {
                 return "th";
             }
         };
-        return days[date.getDay()] + ", " + date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
+        return date.getDate() + dateSuffix(date.getDate()) + " " + months[date.getMonth()];
     };
     $scope.pageItems = [ {
         name: "Homepage",
@@ -95,20 +95,23 @@ app.controller("mainController", function($scope, contentfulClient) {
         name: "Events",
         value: "Events"
     }, {
-        name: "Membership",
-        value: "Membership"
+        name: "News",
+        value: "News"
     }, {
-        name: "About",
-        value: "About"
+        name: "Content",
+        value: "Content"
     }, {
-        name: "Error",
-        value: "Error Page"
+        name: "Ratings",
+        value: "Ratings"
     }, {
         name: "Global",
         value: "Global"
     }, {
         name: "Search",
         value: "Search"
+    }, {
+        name: "eDMs",
+        value: "eDM"
     }, {
         name: "Shop",
         value: "Shop"
