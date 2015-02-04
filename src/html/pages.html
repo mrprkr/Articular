@@ -41,7 +41,7 @@
 		<th style="text-align:right;">Open</th>
 		</tr>
 	<!-- REPEATER -->
-		<tr ng-repeat="item in entries | filter: pageFilter:true | filter: searchText | filter: statusFilter : true | orderBy: 'fields.name'" height="20px">
+		<tr ng-repeat="item in entries | filter: pageFilter:true | filter: searchText | filter: statusFilter : true | orderBy: 'fields.title'" height="20px">
 		<td>
 			<p ng-if="item.fields.status == 'Approved'" style="color: green">
 				<i class="fa fa-check-circle"></i></p>
