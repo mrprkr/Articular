@@ -1,5 +1,26 @@
+<div class="rail">
+	<div class="railModule"> 
+		<h4>Status Report:</h4>
+		<br/>
+		<p>{{getStatusNumber('Approved')}} Approved</p>
+		<p>{{getStatusNumber('Conditionally Approved')}} Conditionally Approved</p>
+		<p>{{getStatusNumber('Awaiting Approval')}} Awaiting Approval</p>
+		<p>{{getStatusNumber('Design in Progress')}} Design in Progress</p>
+		<hr/>
+		<p><strong>{{entries.length}} Pages Total</strong></p>
+	</div>
+
+	<div class="railModule">
+	<h4>Page Index:</h4>
+	<br/>
+	<a href="/src/files/SA_design_Index.xlsx" download="SA_design_index_v1_5.xlsx"><i class="fa fa-download"></i> Download v1.5</a>
+	</div>
+
+</div>
+
 <div id="welcomeContainer" style="width:600px; margin-top:20px">
 <h2>Welcome {{user.first_name}}</h2>
+
 <br/>
 <p>Articular helps everyone communicate by 'articulating' complex design into a common language. There is a consolidated repository of designed <a href="#/pages">pages</a> avaliable, with details of their status, functionality, and itteration history.</p><br/>
 <p>Pages can also be explored through <a href="#/journeys">core user journeys</a> which showcase how a user might move through the service. These user journeys are based on the functional requirements of the service and aim to showcase the most common user interactions.</p> 
@@ -10,16 +31,13 @@
 	</div>
 </div>
 
-<div class="file bugs">
-<h5>Page Index:</h5>
-<br/>
-<a href="/src/files/SA_design_Index.xlsx" download="SA_design_index_v1_5.xlsx"><i class="fa fa-download"></i> Download v1.5</a>
-</div>
 
 
+
+<!-- 
 <div class="bugs">
 	<p style="color: green"><i class="fa fa-plus-circle"></i> Feature: Navigate to /id/[assetID] to load that page</p> 
 	<br/><hr/><br/>
-	<p style="color: #eca400"><i class="fa fa-exclamation-triangle"></i> Page Design template is not ng-cloaked and flashes {{ on load</p>
-	<p style="color: #eca400"><i class="fa fa-exclamation-triangle"></i> Related Pages do not list as expected</p>
-</div>
+	<p style="color: #eca400"><strike><i class="fa fa-exclamation-triangle"></i> Page Design template is not ng-cloaked and flashes {{ on load</strike></p>
+	<p style="color: #eca400"><strike><i class="fa fa-exclamation-triangle"></i> Related Pages do not list as expected</strike></p>
+</div> -->

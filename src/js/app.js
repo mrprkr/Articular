@@ -67,6 +67,19 @@ app.controller('mainController', function($scope, contentfulClient){
 	contentfulClient.entries({'content_type':'3P0nCdvt7200MEOKUYge8e'}).then(function(entries){
 		  $scope.entries = entries;
 		  // console.log($scope.entries[0].sys.id);
+	
+
+	$scope.getStatusNumber = function(checkStatus){
+		var nApproved = 0;
+		for(var i in $scope.entries){
+			if($scope.entries[i].fields.status === checkStatus){
+				nApproved++;
+			}
+		}
+		return nApproved;
+	};
+
+
 	});
 
 	//filtering for the list
@@ -75,26 +88,7 @@ app.controller('mainController', function($scope, contentfulClient){
 		$scope.listFilter = filter;
 	};
 
-	//return the index of an object
-	$scope.indexOf = function(item){
-		var x = $scope.entries.indexOf(item);
-		return x;
-	};
 
-	$scope.whatColor = function(state){
-		if(state === "Surfing Australia"){
-			return "color: #444";
-		}
-		else if(state === "South Australia"){
-			return "color: red";
-		}
-	};
-
-	//filter by approved or not
-	$scope.filterToNotApproved = false;
-	$scope.filterApproval = function(value){
-		$scope.filterToNotApproved = value;
-	};
 
 	//THIS IS SOME SERIOUS DATE BUSINESS ----Look away, it's magic----
 	$scope.theDate = function(value){

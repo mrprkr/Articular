@@ -48,25 +48,19 @@ app.controller("mainController", function($scope, contentfulClient) {
         content_type: "3P0nCdvt7200MEOKUYge8e"
     }).then(function(entries) {
         $scope.entries = entries;
+        $scope.getStatusNumber = function(checkStatus) {
+            var nApproved = 0;
+            for (var i in $scope.entries) {
+                if ($scope.entries[i].fields.status === checkStatus) {
+                    nApproved++;
+                }
+            }
+            return nApproved;
+        };
     });
     $scope.listFilter = "";
     $scope.filterList = function(filter) {
         $scope.listFilter = filter;
-    };
-    $scope.indexOf = function(item) {
-        var x = $scope.entries.indexOf(item);
-        return x;
-    };
-    $scope.whatColor = function(state) {
-        if (state === "Surfing Australia") {
-            return "color: #444";
-        } else if (state === "South Australia") {
-            return "color: red";
-        }
-    };
-    $scope.filterToNotApproved = false;
-    $scope.filterApproval = function(value) {
-        $scope.filterToNotApproved = value;
     };
     $scope.theDate = function(value) {
         var date = new Date(value);

@@ -102,6 +102,21 @@ hr {
 tr:hover .pagePreviewThumb {
   display: block; }
 
+.rail {
+  display: block;
+  width: 220px;
+  float: right; }
+  .rail hr {
+    margin-top: 4px;
+    margin-bottom: 4px; }
+
+.railModule {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  color: #444;
+  margin-top: 20px; }
+
 #search {
   text-align: right;
   float: right;
