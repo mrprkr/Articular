@@ -1,12 +1,12 @@
 <a href="/#/pages"><i class="fa fa-arrow-circle-left"></i> ALL PAGES</a>
 <br/><br/><br/>
 
-<div class="imageHolder" ng-cloak>
+<div class="imageHolder">
 	<a ng-href="{{pageLoaded.fields.image.fields.file.url}}" target="_blank">
 	<img ng-src="{{pageLoaded.fields.image.fields.file.url}}?fit=scale&amp;w=500&amp;fm=png&amp;q=60"></a>
 </div>
 
-<div class="textHolder" ng-cloak>
+<div class="textHolder">
 <h3>{{pageLoaded.fields.name}}</h3>
 <p>{{pageLoaded.fields.pageState}}</p>
 <!-- <br/>
@@ -34,9 +34,9 @@
 <p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments: <br/>{{pageLoaded.fields.comments}}</p><br/>
 
 
-<p><i class="fa fa-file-o"></i> Related Pages:</p>
+<p><i class="fa fa-file-o"></i>Other States:</p>
 <div ng-show="showRelated">
-	<p ng-repeat="item in entries | filter: relatedFilter:true | orderBy: 'fields.pageState'">
-	<a href="/#/design/{{item.sys.id}}">{{item.fields.pageState}}</a>
+	<p ng-repeat="item in entries | filter: relatedFilter:true | filter: pageLoaded.fields.pageCategory:true | orderBy: 'fields.title'">
+	<a ng-href="#/design/{{item.sys.id}}">{{item.fields.pageState}}</a>
 </p></div>
 </div>
