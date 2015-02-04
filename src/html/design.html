@@ -9,6 +9,7 @@
 <div class="textHolder">
 <h3>{{pageLoaded.fields.name}}</h3>
 <p>{{pageLoaded.fields.pageState}}</p>
+<p>Index: {{pageLoaded.fields.title | limitTo: 6}}</p>
 <!-- <br/>
 <p><i class="fa fa-map-marker"></i> {{pageLoaded.fields.stakeholder}}</p> -->
 	<br/>
@@ -34,7 +35,7 @@
 <p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments: <br/>{{pageLoaded.fields.comments}}</p><br/>
 
 
-<p><i class="fa fa-file-o"></i>Other States:</p>
+<p><i class="fa fa-file-o"></i>Other States of this Template:</p>
 <div ng-show="showRelated">
 	<p ng-repeat="item in entries | filter: relatedFilter:true | filter: pageLoaded.fields.pageCategory:true | orderBy: 'fields.title'">
 	<a ng-href="#/design/{{item.sys.id}}">{{item.fields.pageState}}</a>
