@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SA Event Tile Demo</title>
+	<!-- COMPILED CSS STYLESHEET -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+<body>
+<div id="module-info" style="background-color:#fff;">
+	<div id="screen-width">The width is</div>
+	<h1 id="module-name">Events Tile Demo</h1>
+	<div style="max-width: 600px; font-size: 13px;"><br/><p> This demo shows the functionality and visual design of the events tiles. The design has considered a visually led approach and how the information is presented on a range of mobile and desktop devices.</p><br/><p>Colour is used to differentiate states, with plenty of white space around vital event information to present in a clear and consise way. The date is the start date of the event; open/closed communicates the status of event entry, with both "read more" and "view event" taking the user to the event details page.</p><br/><p>The "show more events" button allows the user to load more events to the view, simillar to pagination. There is a subtle fade as events are loaded and displayed.</div>
+	<!-- <div class="button" id="reload"><a href="#"><i class="fa fa-refresh"></i> Reload</a></div> -->
+</div>
+
+<hr/>
+<!-- BUILD THE MODULE HERE -->
+
+<br><br>
+
+<div class="eventTileContainer">
+	<div class="eventTile" id="nswTile">
+	<i class="fa fa-camera-retro"></i> fa-camera-retro
+		<div class="imageContainer"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="nswLabel"><i class="fa fa-map-marker"></i> Bondi, NSW</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">CLOSED</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Original Source Australian Boardriders Battle - SOUTH REGION</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 16th Oct 2015</span>
+			</div>
+			<div class="eventDesc">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit.</p><p><a href="#">Read More</a></p></span>
+			</div>
+
+
+		</div>
+	</div>
+
+		<div class="eventTile" id="saTile">
+		<div class="imageContainer" id="saImage"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div id="saAccent" class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="saLabel"><i class="fa fa-map-marker"></i> Brighton, SA</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">OPEN</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Nikon Open Championships</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 06th Jun 2015</span>
+			</div>
+			<div class="eventDesc" id="eventDescSa">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit.</p><p><a href="#">Read More</a></p></span>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="eventTile" id="waTile">
+		<div class="imageContainer" id="waImage"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div id="waAccent" class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="saLabel"><i class="fa fa-map-marker"></i> Margaret River, WA</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">OPEN</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Wahu Surfer Groms Comps - Under 18</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 23th Aug 2015</span>
+			</div>
+			<div class="eventDesc" id="eventDescWa">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit.</p>
+			<a href="#" class="cta"><li class="cd-icon-16"></li> <span class="cta-text">Read More</span></a>
+			</span>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="eventTile" id="tasTile">
+		<div class="imageContainer" id="tasImage"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div id="tasAccent" class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="tasLabel"><i class="fa fa-map-marker"></i> Crescent Head, TAS</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">OPEN</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Red Herring Surf Bruny Island Junior and longboards</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 12th Sep 2015</span>
+			</div>
+			<div class="eventDesc" id="eventDescTas">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit.</p><p><a href="#">Read More</a></p></span>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="eventTile" id="ntTile">
+		<div class="imageContainer" id="ntImage"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div id="ntAccent" class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="ntLabel"><i class="fa fa-map-marker"></i> East Woody Beach, NT</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">CLOSED</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Ocean &amp; Earth International Teenage Rampage</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 25th Jul 2015</span>
+			</div>
+			<div class="eventDesc" id="eventDescNt">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ea commodo consequat. Duis aute irure dolor in reprehenderit.</p><p><a href="#">Read More</a></p></span>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="eventTile" id="qldTile">
+		<div class="imageContainer" id="qldImage"></div>
+		<div class="eventBody">
+			<div class="eventHeader">
+				<div id="qldAccent" class="accentStrip"></div>
+				<div class="locationContainer">
+					<span id="qldLabel"><i class="fa fa-map-marker"></i> Surfers Paradise, QLD</span>
+				</div>
+
+				<div class="statusContainer">
+					<span id="stateLable">OPEN</span>
+				</div>
+			</div>
+			<div class="listing-heading">
+				<h3>Coastalwatch Surf for Life - Snapper Rocks</h3>
+			</div>
+			<div class="eventDate">
+				<span id="start-date"><i class="fa fa-calendar"></i> 25th Apr 2015</span>
+			</div>
+			<div class="eventDesc" id="eventDescQld">
+			<span id="event-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p><p><a href="#">Read More</a></p></span>
+			</div>
+
+
+		</div>
+	</div>
+
+<div class="loadMore" id="showMore">Show More Events</div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<!-- END MODULE -->
+<script src="js/event-main.js"></script> <!-- Resource jQuery -->
+</body>
+<!-- SETS THE PIXEL VALUE IN THE TOP RIGHT -->
+<script type="text/javascript">
+var setWidthValue = function(){
+	var windowWidth = $(window).width();
+	$("#screen-width").text(windowWidth+" px");
+};
+
+$(document).ready(function(){
+	setWidthValue();
+});
+
+$(window).resize(function(){
+	setWidthValue();
+});
+</script>
+</html>
