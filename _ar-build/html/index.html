@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Articular</title>
-	<link rel="stylesheet" type="text/css" href="src/css/style-guide.css">
-	<!-- <link rel="stylesheet" type="text/css" href="src/css/stylesheet.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="src/css/style-guide.css"> -->
+	<link rel="stylesheet" type="text/css" href="src/css/stylesheet.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="src/js/lib/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/lib/modernizer/modernizr.js"></script>
@@ -22,23 +22,25 @@
 </head>
 <body ng-controller="mainController">
 
-<div class="contentContainer">
-	
-	<p style="color:#999; font-size:11px; text-align:right"><i class="fa fa-code"></i> Under Development | <a style="font-size:inherit; color: inherit; text-decoration: underline;"href="mailto:mparker@brandnewmedia.com.au">report a bug</a></p>
-
-	<header>
-		<nav ng-show="user.authenticated">
-		<h3 id="articular-logo"><a href="#/"><i class="fa fa-comments-o"></i> Articular</a></h3>
-			<ul class="articular-nav">
+	<div class="contentContainer">
+	<!-- <p style="color:#999; font-size:11px; text-align:right"><i class="fa fa-code"></i> Under Development | <a style="font-size:inherit; color: inherit; text-decoration: underline;"href="mailto:mparker@brandnewmedia.com.au">report a bug</a></p> -->
+	<header class="ar-header">
+		<nav class="ar-nav" ng-show="user.authenticated">
+			<h3 id="articular-logo"><a href="#/"><i class="fa fa-comments-o"></i> Articular</a></h3>
+			<div class="ar-nav-wrapper">
+			<ul class="ar-nav-ul">
+				<li><a href="#" ua-logout>Log Out </a></li>
+				<li><a href="/styleguide/styleguide.html">Styleguide</a></li>
 				<li><a href="#/journeys">Journeys</a></li>
 				<li><a href="#/pages">Pages</a></li>
-				<li><a href="#/styleguide">Styleguide</a></li>
-				<li><a href="#" ua-logout>Log Out </a></li>
 			</ul>
+			</div>
+					<hr>
+		<br/>
 		</nav>
 
-	<hr>
-	<br/>
+		</header>
+	
 	</div>
 	
 	<ng-view></ng-view>
