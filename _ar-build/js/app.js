@@ -29,7 +29,7 @@ app.config(function($routeProvider, contentfulClientProvider){
 		})
 
 		.when('/styleguide', {
-			templateUrl: "src/views/styleguide.html",
+			templateUrl: "src/views/styleguide-holder.html",
 			controller: 'styleguideController',
 			hasPermission: 'admin'
 		})

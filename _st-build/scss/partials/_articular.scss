@@ -1,0 +1,9 @@
+//Additional styles for articular
+
+.articular-nav {
+	display: block;
+	background-color: red;
+	& li {
+		float: right;
+	}
+}

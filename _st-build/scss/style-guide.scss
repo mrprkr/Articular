@@ -77,21 +77,21 @@ header {
 		border-color: lighten($color-2, 10%);
 	}
 
-	@include MQ(M) {
-		li a {
-			color: lighten($color-2, 40%);
+	// @include MQ(M) {
+	// 	li a {
+	// 		color: lighten($color-2, 40%);
 
-			&.selected {
-				color: $color-2;
-				box-shadow: 0;
-				border-bottom: 2px solid $color-2;
-			}
+	// 		&.selected {
+	// 			color: $color-2;
+	// 			box-shadow: 0;
+	// 			border-bottom: 2px solid $color-2;
+	// 		}
 
-			.no-touch &:hover {
-				color: $color-1;
-			}
-		}
-	}
+	// 		.no-touch &:hover {
+	// 			color: $color-1;
+	// 		}
+	// 	}
+	// }
 }
 
 .cd-nav-trigger span {

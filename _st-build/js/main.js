@@ -35,24 +35,26 @@ jQuery(document).ready(function($){
 	/*******************
 		buttons
 	********************/
-	var buttonsWrapper = $('#buttons .cd-box'),
-		buttonsHtml = buttonsWrapper.html(),
-		containerHtml = $('<div class="cd-box"></div>').insertAfter(buttonsWrapper),
-		buttonsHtmlText = buttonsHtml.split('</button>');
 
-	$.map(buttonsHtmlText, function(value){
-		if(value.indexOf('button') >= 0 ) {
-			var splitText = value.split('class="'),
-				block1 = splitText[0]+'class="';
-				block2 = splitText[1].split('"');
+// THIS FUNCTION THROWING ERRORS
+	// var buttonsWrapper = $('#buttons .cd-box'),
+	// 	buttonsHtml = buttonsWrapper.html(),
+	// 	containerHtml = $('<div class="cd-box"></div>').insertAfter(buttonsWrapper),
+	// 	buttonsHtmlText = buttonsHtml.split('</button>');
+
+	// $.map(buttonsHtmlText, function(value){
+	// 	if(value.indexOf('button') >= 0 ) {
+	// 		var splitText = value.split('class="'),
+	// 			block1 = splitText[0]+'class="';
+	// 			block2 = splitText[1].split('"');
 				
-			var wrapperElement = $('<p></p>').text(block1),
-				spanElement = $('<span></span>').text(block2[0]);
-			spanElement.appendTo(wrapperElement);
-			wrapperElement.appendTo(containerHtml);
-			wrapperElement.append('"'+block2[1]+'&lt;/button&gt;');
-		}
-	});
+	// 		var wrapperElement = $('<p></p>').text(block1),
+	// 			spanElement = $('<span></span>').text(block2[0]);
+	// 		spanElement.appendTo(wrapperElement);
+	// 		wrapperElement.appendTo(containerHtml);
+	// 		wrapperElement.append('"'+block2[1]+'&lt;/button&gt;');
+	// 	}
+	// });
 
 	/*******************
 		typography
