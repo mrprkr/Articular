@@ -58,7 +58,7 @@ gulp.task('bower', function(){
 //Watch these files for changes and run the build
 gulp.task('watch', function(){
     gulp.watch(
-        ['./build/html/*.html', './build/js/*.js', './build/scss/*.scss','./build/img/**', './build/views/**', './bower_components'],
+        ['./build/html/*.html', './build/js/*.js', './build/scss/*.scss','./build/scss/**/.scss','./build/img/**', './build/views/**', './bower_components'],
         ['build']
     )
 });
