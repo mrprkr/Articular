@@ -16,6 +16,8 @@
   "dependencies": {
     "angular-route": "~1.3.11",
     "contentful": "~0.1.2",
-    "ng-contentful": "~0.1.2"
+    "ng-contentful": "~0.1.2",
+    "jquery": "~2.1.3",
+    "modernizer": "~2.8.2"
   }
 }

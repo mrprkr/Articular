@@ -44,12 +44,23 @@ a {
 }
 header {
 	background-color: $color-6;
+	border-bottom: #cccccc;
+	-moz-box-shadow:    0px 1px 2px 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.05);
+	// box-shadow:  ;
 }
+
 
 .cd-logo {
 	/* logo box style */
 	background-color: $color-6;
-	width: 120px;
+	width: 128px;
+	height: 128px;
+	position: absolute;
+	z-index: 6;
+	-moz-box-shadow:    3px 1px 2px 1px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 3px 1px 2px 1px rgba(0,0,0,0.05);
+    box-shadow:         3px 1px 2px 1px rgba(0,0,0,0.05);
 
 	@include MQ(M) {
 		width: 180px;
@@ -58,11 +69,12 @@ header {
 
 .cd-main-nav {
 	/* main navigation background color - full screen on small devices */
-	background: $color-2;
+	background: $color-6;
+	margin-left: 168px;
 
 	li a {
-		color: $color-5;
-		border-color: lighten($color-2, 5%);
+		color: $color-2;
+		border-color: lighten($color-2, 10%);
 	}
 
 	@include MQ(M) {
@@ -95,11 +107,11 @@ header {
 
 .nav-is-visible .cd-nav-trigger span {
 	/* hide line in the center on mobile when nav is visible */
-	background-color: rgba($color-5, 0);
+	background-color: rgba($color-2, 0);
 
 	&::before, &::after {
 		/* preserve visibility of upper and lower lines - close icon */
-		background-color: rgba($color-5, 1);
+		background-color: rgba($color-2, 1);
 	}
 }
 
@@ -152,7 +164,7 @@ h1 {
 h1 {
 	font-size: 2.4rem;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.6;
 	margin: 0 0 .4em;
 
 	@include MQ(S) {
@@ -164,38 +176,17 @@ h1 {
 	}
 }
 
-.cd-box {
-	h1 {
-		
-	}
-}
-
 .bg-im {
 	background-image: url(../assets/surf-image.jpg);
     background-repeat: no-repeat;
     background-position: 0% 80%;
 }
 
-h2 {
-	font-weight: bold;
-	font-family: $secondary-font;
-	text-transform: uppercase;
-	margin: 1em 0;
-
-	@include MQ(S) {
-		font-size: 1.8rem;
-		margin: 1em 0 1.4em;
-	}
-}
-
-section > h2::before {
-	/* number before each section title */
-	color: darken($color-4, 15%);
-}
 
 p {
 	font-size: 1.4rem;
-	line-height: 1.4;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
 	color: lighten($color-2, 25%);
 
 	a {
@@ -205,11 +196,10 @@ p {
 
 	@include MQ(S) {
 		font-size: 1.5rem;
-		line-height: 1.6;
 	}
 }
 
-.main-heading {
+h1 {
 	font-weight: $thin-font;
 	background-color: $color-6;
 	display: inline;
@@ -218,36 +208,81 @@ p {
 }
 
 
-.event-heading, .news-heading, .listing-heading, .over-heading  {
-	font-family: $secondary-font;
-	font-weight: $bold-font !important;
-
-}
-
-.event-heading {
-	font-size: 2.75rem;
-}
-
-.news-heading {
-	font-size: 3.25rem;
-}
-
-.news-body {
-	font-size: 1.95rem;
-}
-
-.listing-heading {
-	font-size: 2rem;
-	line-height: 2.4rem;
-	
-}
-
-.over-heading {
+h2 {
 	background: $color-2;
 	color: $color-6;
 	display: inline;
+	font-size: 4rem;
 
 }
+
+h3 {
+	font-size: 3.25rem;
+}
+
+h4 {
+	font-size: 2.75rem;
+
+}
+
+
+h2, h3, h4, h5, h6  {
+	font-family: $secondary-font;
+	font-weight: $bold-font;
+	line-height: 1.6;
+
+}
+
+
+
+.news-body {
+	font-size: 1.95rem;
+	line-height: 1.6;
+}
+
+h5 {
+	font-size: 2rem;
+	
+}
+
+h6  {
+	font-weight: $semibold-font;
+
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+code {
+	font-family: Courier, 'New Courier', monospace;
+}
+
+
+blockquote {
+  margin: 1em;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $color-3;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+  font-style: italic;
+}
+
+
 
 .cta-text{
 	height: 26px;
@@ -267,6 +302,8 @@ p {
 
 // -------------------------------- */
 
+
+
 .btn {
 	border: none;
 	box-shadow: none;
@@ -285,8 +322,8 @@ p {
 		outline: none;
 	}
 
-	.no-touch &:hover {
-		background: lighten($color-1, 5%);
+	.no-touch &:hover  {
+		background: lighten($color-1, 10%);
 	}
 
 
@@ -294,7 +331,7 @@ p {
 		background: $success;
 
 		.no-touch &:hover {
-			background: lighten($success, 5%);
+			background: lighten($success, 10%);
 		}
 	}
 
@@ -302,7 +339,7 @@ p {
 		background: $alert;
 
 		.no-touch &:hover {
-			background: lighten($alert, 5%);
+			background: lighten($alert, 10%);
 		}
 	}
 
@@ -355,19 +392,19 @@ xForm
 -------------------------------- */
 
 ::-webkit-input-placeholder {
-   color: darken($color-3, 5%);
+   color: darken($color-3, 10%);
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: darken($color-3, 5%);  
+   color: darken($color-3, 10%);  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: darken($color-3, 5%);  
+   color: darken($color-3, 10%);  
 }
 
 :-ms-input-placeholder {  
-   color: darken($color-3, 5%);  
+   color: darken($color-3, 10%);  
 }
 
 .form-titles {
@@ -378,7 +415,7 @@ xForm
 }
 
 input[type=text], select {
-	border: 1px solid darken($color-4, 5%);
+	border: 1px solid darken($color-4, 10%);
 	border-radius: 0;
 	background: none;
 
@@ -426,7 +463,7 @@ input[type=text] {
 
 input[type=radio],
 input[type=checkbox] {
-	position: absolute;
+	//position: absolute;
 	left: 0;
 	top: 0;
 	margin: 0;
@@ -434,8 +471,7 @@ input[type=checkbox] {
 	opacity: 0;
 }
 
-.radio-label,
-.checkbox-label {
+label {
 	padding-left: 24px;
 	font-family: $secondary-font;
 
@@ -445,17 +481,17 @@ input[type=checkbox] {
 	&::after {
 		/* custom radio and check boxes */
 		content: '';
-		display: block;
+		display: inline-block;
 		width: 16px;
 		height: 16px;
-		position: absolute;
+		//position: absolute;
 		top: 50%;
 		@include transform(translateY(-50%));
 	}
 
 	&::before {
 		left: 0;
-		border: 1px solid darken($color-4, 5%);
+		border: 1px solid darken($color-4, 10%);
 		box-shadow: 0;
 	}
 
@@ -466,13 +502,13 @@ input[type=checkbox] {
 	}
 }
 
-.radio-label::before {
-	border-radius: 50%;
-}
+// .radio-label::before {
+// 	border-radius: 50%;
+// }
 
-.checkbox-label::before {
-	border-radius: 3px;
-}
+// .checkbox-label::before {
+// 	border-radius: 3px;
+// }
 
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
@@ -486,10 +522,10 @@ input[type=checkbox]:checked + label::after {
 	display: block;
 }
 
-.cd-select::after {
+select::after {
 	/* switcher arrow for select element */
 	content: '';
-	position: absolute;
+	//position: absolute;
 	z-index: 1;
 	right: 14px;
 	top: 50%;
@@ -510,6 +546,15 @@ select {
 	font-weight: $bold-font;
 }
 
+ul {
+    list-style: square outside none;
+    margin-left: 1.6em;
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: 1.6em;
+}
 
 
 
