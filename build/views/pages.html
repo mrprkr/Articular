@@ -1,0 +1,95 @@
+<div class="contentContainer">
+<!-- <div class="designNav">
+<i class="fa fa-filter"></i>
+<a ng-click="filterApproval(false)" class="designLink">Show All</a>
+<a ng-click="filterApproval(true)" class="designLink">Show Awaiting Approval</a>
+</div> -->
+<div class="designNav" style="margin-left:10px">
+<!-- <i class="fa fa-file-o"></i> --><i class="fa fa-filter"></i>
+
+<select ng-model="pageFilter" ng-options="item.value as item.name for item in pageItems">
+	<option value="">All Categories</option>
+</select>
+
+<select ng-model="statusFilter" ng-options="status.name as status.name for status in statusItems">
+	<option value="">All Statuses</option>
+</select>
+
+
+ <script type="text/javascript">
+ document.getElementById("searchText").focus();
+ </script>
+
+<span id="search"><input placeholder="search" id="searchText" type="text" ng-model="searchText">
+<i class="fa fa-search"></i></span>
+</div>
+<br/>
+
+<!-- Page filter: {{pageFilter}} <br/><br/> -->
+<!-- Entries: {{entries[0].fields.name}} -->
+
+
+
+<!-- TABLE RESULTS -->
+<table width="100%">
+	<tr>
+		<th width="20px"><i class="fa fa-user"></i></th>
+		<th width="40px">Index</th>
+		<th width="80px">Category</th>
+		<th width="220px">Page Template</th>
+		<th width="300px">Template State</th>
+		<!-- <th width="40px" style="text-align:center; padding-right:40px">Rev</th>
+		<th width="">Updated</th> -->
+		<th style="text-align:right;">Open</th>
+		</tr>
+	<!-- REPEATER -->
+		<tr ng-repeat="item in entries | filter: pageFilter:true | filter: searchText | filter: statusFilter : true | orderBy: 'fields.pageCategory'" height="20px">
+		<td>
+			<div class="pagePreviewThumb"><img ng-src="{{item.fields.image.fields.file.url}}?w=200"></div>
+			<p ng-if="item.fields.status == 'Approved'" style="color: green">
+				<i class="fa fa-check-circle"></i></p>
+			<p ng-if="item.fields.status == 'Conditionally Approved'" style="color: #006992">
+				<i class="fa fa-check-circle"></i></p>
+			<p ng-if="item.fields.status == 'Awaiting Approval'" style="color:#d93f3d">
+				<i class="fa fa-flag"></i></p>
+			<p ng-if="item.fields.status == 'Design in Progress'">
+				<i class="fa fa-magic"></i></p>
+			<p ng-if="item.fields.status == undefined" style="color:#aaa">
+				<i class="fa fa-question-circle"></i></p>
+			</td>
+		<td>{{item.fields.title | limitTo: 6}}</td>
+		<td>{{item.fields.pageCategory}}</td>
+		<td>{{item.fields.name}}</td>
+		<td>{{item.fields.pageState}}</td>
+		<!-- <td style="text-align:center; padding-right:40px"><i class="fa fa-code-fork" style="padding-left:2px"></i> {{item.sys.revision}}</td> -->
+		<!-- <td>{{theDate(item.sys.updatedAt)}}</td> -->
+		<td style="text-align:right; font-size: 17px"><a href="/#/design/{{item.sys.id}}"><i class="fa fa-arrow-circle-right"></i></a></td>
+		</tr>
+	</table>
+
+<br/><br/><br/>
+
+<!-- <div ng-hide="filterToNotApproved" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
+	<div class="listItem">
+		<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
+		<span class="pageState">
+		<br/>
+		<p ng-show="{{item.fields.clientApproved}}"><i class="fa fa-check-circle"></i> Approved by Client</p>
+		<p ng-hide="{{item.fields.clientApproved}}"><i class="fa fa-times-circle"></i> Not Yet Approved</p></a></span>
+	</div>
+</div>
+
+<div ng-show="filterToNotApproved" ng-repeat="item in entries | filter: listFilter | orderBy: 'fields.name'">
+	<div class="listItem" ng-hide="{{item.fields.clientApproved}}">
+		<a ng-href="#design/{{item.sys.id}}">{{item.fields.name}} - {{item.fields.pageState}}
+		<span class="pageState">
+		<br/>
+		<p ng-show="{{item.fields.clientApproved}}"><i class="fa fa-check-circle"></i> Approved by Client</p>
+		<p ng-hide="{{item.fields.clientApproved}}"><i class="fa fa-times-circle"></i> Not Yet Approved</p></a></span>
+	</div>
+</div> -->
+
+
+</div>
+<!-- BREAK -->
+<br/><br/>

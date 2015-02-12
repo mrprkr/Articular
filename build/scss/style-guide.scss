@@ -1,0 +1,754 @@
+@import './partials/bourbon/app/assets/stylesheets/bourbon'; // http://bourbon.io/
+@import './partials/bourbon/app/assets/stylesheets/bourbon-deprecated-upcoming'; 
+
+@import './partials/layout'; // responsive grid and media queries
+@import './partials/fonts'; //fonts are in here
+@import './partials/reset'; 
+@import './partials/basic-style'; //colours are in here
+
+
+
+// /* -------------------------------- 
+
+// xBackground 
+
+// -------------------------------- */
+
+body {
+	/* this is the page background */
+	background-color: $color-6;
+}
+
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+
+.cd-box {
+	/* this is the container of various design elements - i.e. the 2 logo of the branding section */
+	border: 1px solid $color-4;
+	border-radius: 3px;
+	background: $color-6;
+	box-shadow: 0;
+	padding: 6px;
+}
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+a {
+	color: $color-1;
+}
+header {
+	background-color: $color-6;
+}
+
+.cd-logo {
+	/* logo box style */
+	background-color: $color-6;
+	width: 120px;
+
+	@include MQ(M) {
+		width: 180px;
+	}
+}
+
+.cd-main-nav {
+	/* main navigation background color - full screen on small devices */
+	background: $color-2;
+
+	li a {
+		color: $color-5;
+		border-color: lighten($color-2, 5%);
+	}
+
+	@include MQ(M) {
+		li a {
+			color: lighten($color-2, 40%);
+
+			&.selected {
+				color: $color-2;
+				box-shadow: 0;
+				border-bottom: 2px solid $color-2;
+			}
+
+			.no-touch &:hover {
+				color: $color-1;
+			}
+		}
+	}
+}
+
+.cd-nav-trigger span {
+	/* hamburger menu */
+	background-color: $color-2;
+
+	&::before,
+	&::after {
+		/* upper and lower lines */
+		background-color: $color-2;
+	}
+}
+
+.nav-is-visible .cd-nav-trigger span {
+	/* hide line in the center on mobile when nav is visible */
+	background-color: rgba($color-5, 0);
+
+	&::before, &::after {
+		/* preserve visibility of upper and lower lines - close icon */
+		background-color: rgba($color-5, 1);
+	}
+}
+
+.cd-download {
+	/* download button top-right visible on big devices */
+	background-color: lighten($color-2, 10%);
+
+	.no-touch &:hover {
+		background-color: lighten($color-2, 15%);
+	}
+
+	span {
+		/* tooltip */
+		background: $color-1;
+		color: $color-5;
+
+		&::before {
+			/* right arrow color */
+			border-color: $color-1;
+		}
+	}
+}
+
+// /* -------------------------------- 
+
+// xPage title 
+
+// -------------------------------- */
+
+main > h1 {
+	color: $color-2;
+	font-family: $primary-font;
+
+	@include MQ(L) {
+		/* title goes into the header on big devices */
+		color: $color-2;
+	}
+}
+
+// /* -------------------------------- 
+
+// xTypography 
+
+// -------------------------------- */
+
+h1 {
+	color: $color-2;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 .4em;
+
+	@include MQ(S) {
+		font-size: 3.2rem;
+	}
+
+	@include MQ(M) {
+		font-size: 4rem;
+	}
+}
+
+.cd-box {
+	h1 {
+		
+	}
+}
+
+.bg-im {
+	background-image: url(../assets/surf-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 80%;
+}
+
+h2 {
+	font-weight: bold;
+	font-family: $secondary-font;
+	text-transform: uppercase;
+	margin: 1em 0;
+
+	@include MQ(S) {
+		font-size: 1.8rem;
+		margin: 1em 0 1.4em;
+	}
+}
+
+section > h2::before {
+	/* number before each section title */
+	color: darken($color-4, 15%);
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: lighten($color-2, 25%);
+
+	a {
+		color: $color-1;
+		text-decoration: underline;
+	}
+
+	@include MQ(S) {
+		font-size: 1.5rem;
+		line-height: 1.6;
+	}
+}
+
+.main-heading {
+	font-weight: $thin-font;
+	background-color: $color-6;
+	display: inline;
+	font-size: 5.75rem;
+
+}
+
+
+.event-heading, .news-heading, .listing-heading, .over-heading  {
+	font-family: $secondary-font;
+	font-weight: $bold-font !important;
+
+}
+
+.event-heading {
+	font-size: 2.75rem;
+}
+
+.news-heading {
+	font-size: 3.25rem;
+}
+
+.news-body {
+	font-size: 1.95rem;
+}
+
+.listing-heading {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	
+}
+
+.over-heading {
+	background: $color-2;
+	color: $color-6;
+	display: inline;
+
+}
+
+.cta-text{
+	height: 26px;
+	vertical-align: top;
+	display: inline-block;
+	font-family: $secondary-font;
+	font-weight: $semibold-font;
+	line-height: 26px;
+
+}
+
+
+
+// /* -------------------------------- 
+
+// xButtons 
+
+// -------------------------------- */
+
+.btn {
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	font: {
+		size: 1rem;
+		weight: $bold-font;
+		family: $secondary-font;
+		};
+	color: $color-6;
+	padding: 0.8em 2.012em;
+	cursor: pointer;
+	background: $color-1;
+
+	&:focus {
+		outline: none;
+	}
+
+	.no-touch &:hover {
+		background: lighten($color-1, 5%);
+	}
+
+
+	&.btn-success {
+		background: $success;
+
+		.no-touch &:hover {
+			background: lighten($success, 5%);
+		}
+	}
+
+	&.btn-alert {
+		background: $alert;
+
+		.no-touch &:hover {
+			background: lighten($alert, 5%);
+		}
+	}
+
+	&.btn-outline {
+		color: $color-2;
+		background: transparent;
+		box-shadow: 0;
+		border: 1px solid $color-2;
+
+		.no-touch &:hover {
+			color: $color-5;
+			background: $color-2;
+		}
+	}
+
+	@include MQ(S) {
+		font-size: 1.5rem;
+	}
+}
+
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+	/* CSS class name color */ 
+	color: $color-1;
+}
+
+// /* -------------------------------- 
+
+// xIcons 
+
+// -------------------------------- */
+
+.cd-icons li {
+	/* icons size */
+	width: 26px;
+	height: 26px;
+}
+
+.cta li {
+	/* icons size */
+	width: 26px;
+	height: 26px;
+}
+
+
+/* -------------------------------- 
+
+xForm 
+
+-------------------------------- */
+
+::-webkit-input-placeholder {
+   color: darken($color-3, 5%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: darken($color-3, 5%);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: darken($color-3, 5%);  
+}
+
+:-ms-input-placeholder {  
+   color: darken($color-3, 5%);  
+}
+
+.form-titles {
+	font-family: $secondary-font;
+	color: $color-2;
+	font-weight: $semibold-font;
+	padding: .475em 1em;
+}
+
+input[type=text], select {
+	border: 1px solid darken($color-4, 5%);
+	border-radius: 0;
+	background: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.info-box, .accordion-box  {
+	padding: .475em 1em;
+	margin: 1em;
+	background-color: $color-5;
+	font-family: $secondary-font;
+	font-weight: $bold-font;
+	color: $color-2;	
+}
+
+.inactive {
+	color: $color-3 !important;
+}
+
+.accordion-box {
+	text-transform: uppercase;
+}
+
+input[type=text] {
+	padding: .475em 1em;
+	box-shadow: 0;
+
+	&.success {
+		border-color: $success;
+		box-shadow: 0;
+	}
+
+	&.alert {
+		border-color: $alert;
+		box-shadow: 0;
+	}
+
+	&:focus {
+		border-color: $color-1;
+		box-shadow: 0;
+	}
+}
+
+input[type=radio],
+input[type=checkbox] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+
+.radio-label,
+.checkbox-label {
+	padding-left: 24px;
+	font-family: $secondary-font;
+
+	@include user-select(none);
+
+	&::before,
+	&::after {
+		/* custom radio and check boxes */
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+
+	&::before {
+		left: 0;
+		border: 1px solid darken($color-4, 5%);
+		box-shadow: 0;
+	}
+
+	&::after {
+		left: 0px;
+		background: url('../assets/form/icon-check.svg') no-repeat center center;
+		display: none;
+	}
+}
+
+.radio-label::before {
+	border-radius: 50%;
+}
+
+.checkbox-label::before {
+	border-radius: 3px;
+}
+
+input[type=radio]:checked + label::before,
+input[type=checkbox]:checked + label::before {
+	background-color: $color-6;
+	border: none;
+	box-shadow: none;
+}
+
+input[type=radio]:checked + label::after,
+input[type=checkbox]:checked + label::after {
+	display: block;
+}
+
+.cd-select::after {
+	/* switcher arrow for select element */
+	content: '';
+	position: absolute;
+	z-index: 1;
+	right: 14px;
+	top: 50%;
+	@include transform(translateY(-50%));
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url('../assets/form/icon-select.svg') no-repeat center center;
+	pointer-events: none;
+}
+
+select {
+	position: relative;
+	padding: .5375em 1.5625em .5375em 1em;
+	cursor: pointer;
+	@include appearance(none);
+	text-transform: uppercase;
+	font-weight: $bold-font;
+}
+
+
+
+
+
+// // Module Styling
+
+#module-info {
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 30px; 
+}
+
+#module-info label {
+  
+  }
+
+.button {
+  margin-top: 10px; }
+
+.eventTileContainer {
+  display: block;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto; 
+  font-size: 1.5rem;
+}
+
+.eventTile {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  background-color: $color-6;
+  margin: 15px; 
+}
+
+.imageContainer {
+  display: block;
+  background-image: url("img/image2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 210px; 
+}
+
+.eventDate {
+	font-size: 1.5rem;
+	font-family: $secondary-font;
+}
+
+.eventBody {
+  padding: 30px; }
+
+.eventHeader {
+  
+   }
+
+
+
+.accentStrip {
+  height: 5px;
+  width: 55px;
+  display: block;
+  background-color: #006992;
+  margin-bottom: 8px; }
+
+.locationContainer {
+  display: inline-block;
+  width: 160px; }
+
+.statusContainer {
+  display: inline-block;
+  float: right;
+  text-align: right; }
+
+.eventTitle {
+  color: #1c1d25;
+  margin-top: 25px;
+  line-height: 1.5em; }
+
+.eventTitle h3 {
+  }
+
+.eventDate {
+ }
+
+.eventDate i {
+  margin-right: 2px; }
+
+.eventDesc {
+  margin-top: 30px; }
+
+.eventDesc p {
+ }
+
+a {
+   }
+
+a:hover {
+   }
+
+.ctaContainer {
+  display: block;
+  margin-bottom: 20px; }
+
+.eventCta {
+  display:block; }
+
+.eventCta i {
+  margin-left: 4px; }
+
+.eventCta:hover {
+  opacity: 0.9; }
+
+.loadMore {
+  text-align: center;
+  color: #444;
+  width: auto;
+  margin: 15px;
+  padding: 13px;
+  background-color: #CCC;
+  cursor: pointer; }
+
+.loadMore:hover {
+  background-color: $color-4; 
+}
+
+@media screen and (max-width: 1023px) {
+  .eventTile {
+    width: 400px; }
+
+  .eventTileContainer {
+    width: 879px; } }
+
+
+@media screen and (max-width: 880px) {
+  .eventTile {
+    width: 300px; }
+
+  .eventTileContainer {
+    width: 679px; } }
+
+
+@media screen and (max-width: 680px) {
+  .eventTile {
+    width: 100%;
+    margin-left: 0px; }
+
+  .eventTileContainer {
+    width: 80%; } }
+
+
+@media screen and (max-width: 330px) {
+  .eventBody {
+    padding: 22px; }
+
+  .eventTileContainer {
+    width: 90%; }
+
+  .eventCta {
+    margin-right: 0px;
+    margin-bottom: 22px; } }
+
+
+
+#saImage {
+  background-image: url("img/image3.jpg"); }
+
+#saAccent {
+  background-color: #931621; }
+
+#eventDescSa a {
+  color: #931621; }
+
+#eventDescSa a:hover {
+  border-bottom: 2px solid #931621; }
+
+#eventCtaSa {
+  background-color: #931621; }
+
+#waImage {
+  background-image: url("img/image4.jpg"); }
+
+#waAccent {
+  background-color: #eca400; }
+
+#eventDescWa a {
+  color: #eca400; }
+
+#eventDescWa a:hover {
+  border-bottom: 2px solid #eca400; }
+
+#eventCtaWa {
+  background-color: #eca400; }
+
+#tasImage {
+  background-image: url("img/image5.jpg"); }
+
+#tasAccent {
+  background-color: #6eba96; }
+
+#eventDescTas a {
+  color: #6eba96; }
+
+#eventDescTas a:hover {
+  border-bottom: 2px solid #6eba96; }
+
+#eventCtaTas {
+  background-color: #6eba96; }
+
+#ntImage {
+  background-image: url("img/image6.jpg"); }
+
+#ntAccent {
+  background-color: #1c1d25; }
+
+#eventDescNt a {
+  color: #1c1d25; }
+
+#eventDescNt a:hover {
+  border-bottom: 2px solid #1c1d25; }
+
+#eventCtaNt {
+  background-color: #1c1d25; }
+
+#qldImage {
+  background-image: url("img/image7.jpg"); }
+
+#qldAccent {
+  background-color: #6c003f; }
+
+#eventDescQld a {
+  color: #6c003f; }
+
+#eventDescQld a:hover {
+  border-bottom: 2px solid #6c003f; }
+
+#eventCtaQld {
+  background-color: #6c003f; }
+
+
+
+

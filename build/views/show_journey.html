@@ -1,0 +1,41 @@
+<div class="contentContainer">
+<p><a href="/#/journeys"><i class="fa fa-arrow-circle-left"></i> ALL JOURNEYS</a></p><br/>
+<!-- <br/>
+<h2>{{journeyLoaded.fields.name}}</h2>
+<p>{{journeyLoaded.fields.description}}</p><br/>
+<p>Pages:</p>
+<div ng-repeat="pages in journeyLoaded.fields.pages" style="font-size:13px; padding-left:10px; line-height:17px">
+		<a ng-href="#design/{{pages.sys.id}}">{{pages.fields.name}} - {{pages.fields.pageState}}</a>
+	</div>
+<br/><br/>
+<hr/> -->
+<div class="pageContainer">
+	<div class="pagePreview">
+		<img class="images-loaded" ng-src="{{journeyLoaded.fields.pages[showingPage].fields.image.fields.file.url}}?fit=scale&amp;w=500" width="100%">
+		</div>
+
+	<div class="sidebar">
+		<div class="tools">
+			<h2>{{journeyLoaded.fields.name}}</h2>
+			<p ng-bind-html="toTrusted(journeyLoaded.fields.description)"></p><br/>
+			<p><i class="fa fa-list-ol"></i> Steps: </p>
+			<p id="steps" ng-bind-html="toTrusted(journeyLoaded.fields.steps)"></p><br/>
+			<br/>
+			<p> Page {{showingPage + 1}} of {{journeyLoaded.fields.pages.length}} </p>
+			<button ng-disabled="showingPage < 1" ng-click="previousPage()">Previous Page</button>
+			<button ng-disabled="showingPage >= journeyLoaded.fields.pages.length -1" ng-click="nextPage()">Next Page</button>
+			</div>
+
+		<div class="pageInfo">
+			<hr/><br/>
+			<p><i class="fa fa-file-o"></i> <a href="#/design/{{journeyLoaded.fields.pages[showingPage].sys.id}}">{{journeyLoaded.fields.pages[showingPage].fields.name}} - {{journeyLoaded.fields.pages[showingPage].fields.pageState}}</a></p>
+			<p><i class="fa fa-file-text-o"></i> Description: <p ng-bind-html="toTrusted(journeyLoaded.fields.pages[showingPage].fields.description)"></p>
+			<br/>
+<!-- 			<p ng-show="hasComments()"><i class="fa fa-comments"></i> Comments:</p>
+			<p>{{journeyLoaded.fields.pages[showingPage].fields.comments}}</p>
+			<br/> -->
+			</div>
+		</div>
+
+</div>
+</div>
